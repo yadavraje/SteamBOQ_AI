@@ -3,7 +3,7 @@ import streamlit as st
 from components.project_header import show_project_header
 from forms.steam_form import steam_form
 
-st.title("⚙️ Engineering")
+st.title("⚙️ ENGINEERING")
 
 show_project_header()
 

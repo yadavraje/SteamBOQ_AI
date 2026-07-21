@@ -1,20 +1,9 @@
-results = [
-    {
-        "Parameter": "Steam Quantity",
-        "Value": 250,
-        "Unit": "kg/hr",
-        "Status": ""
-    },
-    {
-        "Parameter": "Steam Velocity",
-        "Value": 28.5,
-        "Unit": "m/s",
-        "Status": "PASS"
-    },
-    {
-        "Parameter": "Pressure Drop",
-        "Value": 0.08,
-        "Unit": "bar",
-        "Status": "PASS"
-    }
-]
+import pandas as pd
+import streamlit as st
+
+
+def engineering_table(data):
+
+   df = pd.DataFrame(data)
+   st.dataframe(df, use_container_width=True, hide_index=True
+    )

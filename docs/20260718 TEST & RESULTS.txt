@@ -1,0 +1,8196 @@
+
+
+app
+
+
+
+Project
+
+
+
+Engineering
+
+
+
+BOQ
+
+
+
+Costing
+
+
+
+Export
+
+
+
+About
+
+
+
+⚙️ ENGINEERING
+
+Project:
+
+
+
+Client:
+
+
+
+Prepared By:
+
+
+
+Revision: 0
+
+
+
+
+
+Steam
+
+
+
+
+
+Condensate
+
+
+
+
+
+Distribution Network
+
+
+
+
+
+Design Summary
+
+
+
+Steam
+
+Steam Requirement Method
+
+
+
+
+
+Product Heating
+
+
+
+
+
+Heat Load (Coming Soon)
+
+
+
+
+
+Direct Steam Injection (Coming Soon)
+
+
+
+
+
+Heat Exchanger (Coming Soon)
+
+
+
+
+
+Sterilization (Coming Soon)
+
+
+
+Product Data
+
+Product Mass (kg)
+
+
+
+1000.00
+
+
+
+
+
+Specific Heat (kJ/kg°C)
+
+
+
+4.19
+
+
+
+
+
+Initial Temperature (°C)
+
+
+
+25.00
+
+
+
+
+
+Final Temperature (°C)
+
+
+
+100.00
+
+
+
+
+
+Heating Time (minutes)
+
+
+
+30.00
+
+
+
+
+
+Steam Conditions
+
+Steam Type: Saturated Steam
+
+
+
+Steam Pressure (barg)
+
+
+
+3.00
+
+
+
+
+
+Distribution System
+
+Steam Pipe Length (m)
+
+
+
+50.00
+
+
+
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+
+
+
+Equivalent Length Details
+
+{...}
+
+{
+
+"selected_pipe":{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"OD_mm":48.3
+
+"Thickness_mm":3.68
+
+"ID_mm":44.62
+
+"Internal_Flow_Area_m2":0.0015638868261999997
+
+"Schedule":40
+
+"Pipe_Series":"ASME B36.10M"
+
+"Material":"CS"
+
+"Absolute_Roughness_mm":0.045
+
+"Weight_kg_per_m":5.44
+
+"Paint_Area_m2_per_m":NaN
+
+"Insulation_OD_mm":NaN
+
+"Max_Pressure_barg":NaN
+
+"Max_Temperature_C":NaN
+
+"Rate_Rs_per_m":NaN
+
+"Velocity_mps":24.16
+
+"Reynolds_Number":167844
+
+"Relative_Roughness":0.0010085163603765126
+
+"Friction_Factor":0.021463245229107912
+
+"Pressure_Drop_kPa":25.16526470476626
+
+"Pressure_Drop_bar":0.2516526470476626
+
+"Acceptable":true
+
+"Velocity_Check":true
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Check":true
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+"evaluation_history":[
+
+0:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":8.57
+
+"Area_m2":0.00005769096895
+
+"Velocity_mps":654.83
+
+"Reynolds_No":873887
+
+"Relative_Roughness":0.005251
+
+"Friction_Factor":0.03099
+
+"Pressure_Drop_kPa":94501.47
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+1:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":11.459999999999999
+
+"Area_m2":0.00010316097179999998
+
+"Velocity_mps":366.2
+
+"Reynolds_No":653509
+
+"Relative_Roughness":0.003927
+
+"Friction_Factor":0.02852
+
+"Pressure_Drop_kPa":21106.83
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+2:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":14.790000000000001
+
+"Area_m2":0.00017182349055
+
+"Velocity_mps":219.87
+
+"Reynolds_No":506370
+
+"Relative_Roughness":0.003043
+
+"Friction_Factor":0.02664
+
+"Pressure_Drop_kPa":5737.99
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+3:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":18.53
+
+"Area_m2":0.00026970998695000005
+
+"Velocity_mps":140.07
+
+"Reynolds_No":404167
+
+"Relative_Roughness":0.002428
+
+"Friction_Factor":0.0252
+
+"Pressure_Drop_kPa":1837.3
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+4:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":23.83
+
+"Area_m2":0.00044606102094999996
+
+"Velocity_mps":84.69
+
+"Reynolds_No":314277
+
+"Relative_Roughness":0.001888
+
+"Friction_Factor":0.02381
+
+"Pressure_Drop_kPa":523.89
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+5:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":30.02
+
+"Area_m2":0.0007078929142
+
+"Velocity_mps":53.37
+
+"Reynolds_No":249474
+
+"Relative_Roughness":0.001499
+
+"Friction_Factor":0.02276
+
+"Pressure_Drop_kPa":168.46
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+6:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":38.64
+
+"Area_m2":0.0011727904608
+
+"Velocity_mps":32.21
+
+"Reynolds_No":193820
+
+"Relative_Roughness":0.001165
+
+"Friction_Factor":0.02186
+
+"Pressure_Drop_kPa":49.82
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+7:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":44.62
+
+"Area_m2":0.0015638868261999997
+
+"Velocity_mps":24.16
+
+"Reynolds_No":167844
+
+"Relative_Roughness":0.001009
+
+"Friction_Factor":0.02146
+
+"Pressure_Drop_kPa":25.17
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+8:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":56.39
+
+"Area_m2":0.00249775811455
+
+"Velocity_mps":15.12
+
+"Reynolds_No":132811
+
+"Relative_Roughness":0.000798
+
+"Friction_Factor":0.02103
+
+"Pressure_Drop_kPa":8.45
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+9:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":67.84
+
+"Area_m2":0.0036150796288
+
+"Velocity_mps":10.45
+
+"Reynolds_No":110395
+
+"Relative_Roughness":0.000663
+
+"Friction_Factor":0.02086
+
+"Pressure_Drop_kPa":3.63
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+10:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":83.41000000000001
+
+"Area_m2":0.005464902672550002
+
+"Velocity_mps":6.91
+
+"Reynolds_No":89788
+
+"Relative_Roughness":0.00054
+
+"Friction_Factor":0.02087
+
+"Pressure_Drop_kPa":1.44
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+11:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":108.28
+
+"Area_m2":0.009209640623199998
+
+"Velocity_mps":4.1
+
+"Reynolds_No":69165
+
+"Relative_Roughness":0.000416
+
+"Friction_Factor":0.02116
+
+"Pressure_Drop_kPa":0.46
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+12:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":134.75
+
+"Area_m2":0.014262765343749999
+
+"Velocity_mps":2.65
+
+"Reynolds_No":55579
+
+"Relative_Roughness":0.000334
+
+"Friction_Factor":0.02163
+
+"Pressure_Drop_kPa":0.18
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+13:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":161.19
+
+"Area_m2":0.02040903074655
+
+"Velocity_mps":1.85
+
+"Reynolds_No":46462
+
+"Relative_Roughness":0.000279
+
+"Friction_Factor":0.02215
+
+"Pressure_Drop_kPa":0.09
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+14:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":210.92
+
+"Area_m2":0.03494473204719999
+
+"Velocity_mps":1.08
+
+"Reynolds_No":35507
+
+"Relative_Roughness":0.000213
+
+"Friction_Factor":0.02316
+
+"Pressure_Drop_kPa":0.03
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+15:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":263.73
+
+"Area_m2":0.05463428438295
+
+"Velocity_mps":0.69
+
+"Reynolds_No":28397
+
+"Relative_Roughness":0.000171
+
+"Friction_Factor":0.02419
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+16:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":313.59
+
+"Area_m2":0.07724503950254999
+
+"Velocity_mps":0.49
+
+"Reynolds_No":23882
+
+"Relative_Roughness":0.000143
+
+"Friction_Factor":0.02509
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+17:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":344.47
+
+"Area_m2":0.09320710079695001
+
+"Velocity_mps":0.41
+
+"Reynolds_No":21741
+
+"Relative_Roughness":0.000131
+
+"Friction_Factor":0.02562
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+18:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":393.7
+
+"Area_m2":0.12175225649499999
+
+"Velocity_mps":0.31
+
+"Reynolds_No":19023
+
+"Relative_Roughness":0.000114
+
+"Friction_Factor":0.02642
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+19:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":442.73
+
+"Area_m2":0.15396573945294997
+
+"Velocity_mps":0.25
+
+"Reynolds_No":16916
+
+"Relative_Roughness":0.000102
+
+"Friction_Factor":0.02717
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+20:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":492.91
+
+"Area_m2":0.19084529059255
+
+"Velocity_mps":0.2
+
+"Reynolds_No":15194
+
+"Relative_Roughness":0.000091
+
+"Friction_Factor":0.02789
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+21:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":592.12
+
+"Area_m2":0.2754010871512
+
+"Velocity_mps":0.14
+
+"Reynolds_No":12648
+
+"Relative_Roughness":0.000076
+
+"Friction_Factor":0.02921
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+22:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":7.890000000000001
+
+"Area_m2":0.00004889902455000001
+
+"Velocity_mps":772.57
+
+"Reynolds_No":949203
+
+"Relative_Roughness":0.005703
+
+"Friction_Factor":0.03177
+
+"Pressure_Drop_kPa":145136.63
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+23:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":10.68
+
+"Area_m2":0.00008959601519999999
+
+"Velocity_mps":421.65
+
+"Reynolds_No":701237
+
+"Relative_Roughness":0.004213
+
+"Friction_Factor":0.02909
+
+"Pressure_Drop_kPa":30319.95
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+24:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":13.900000000000002
+
+"Area_m2":0.00015176645500000004
+
+"Velocity_mps":248.92
+
+"Reynolds_No":538792
+
+"Relative_Roughness":0.003237
+
+"Friction_Factor":0.02708
+
+"Pressure_Drop_kPa":7867.39
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+25:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":17.57
+
+"Area_m2":0.00024248769895
+
+"Velocity_mps":155.79
+
+"Reynolds_No":426250
+
+"Relative_Roughness":0.002561
+
+"Friction_Factor":0.02552
+
+"Pressure_Drop_kPa":2401.04
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+26:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":22.79
+
+"Area_m2":0.00040797621054999996
+
+"Velocity_mps":92.6
+
+"Reynolds_No":328618
+
+"Relative_Roughness":0.001975
+
+"Friction_Factor":0.02404
+
+"Pressure_Drop_kPa":653.61
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+27:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":28.849999999999998
+
+"Area_m2":0.0006537893237499999
+
+"Velocity_mps":57.78
+
+"Reynolds_No":259591
+
+"Relative_Roughness":0.00156
+
+"Friction_Factor":0.02292
+
+"Pressure_Drop_kPa":204.53
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+28:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":37.35
+
+"Area_m2":0.0010957901737500002
+
+"Velocity_mps":34.48
+
+"Reynolds_No":200514
+
+"Relative_Roughness":0.001205
+
+"Friction_Factor":0.02196
+
+"Pressure_Drop_kPa":58.61
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+29:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":43.22
+
+"Area_m2":0.0014672891782
+
+"Velocity_mps":25.75
+
+"Reynolds_No":173281
+
+"Relative_Roughness":0.001041
+
+"Friction_Factor":0.02154
+
+"Pressure_Drop_kPa":29.25
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+30:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":54.76
+
+"Area_m2":0.0023554455447999997
+
+"Velocity_mps":16.04
+
+"Reynolds_No":136764
+
+"Relative_Roughness":0.000822
+
+"Friction_Factor":0.02107
+
+"Pressure_Drop_kPa":9.67
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+31:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":65.99
+
+"Area_m2":0.0034206012185499994
+
+"Velocity_mps":11.04
+
+"Reynolds_No":113490
+
+"Relative_Roughness":0.000682
+
+"Friction_Factor":0.02088
+
+"Pressure_Drop_kPa":4.12
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+32:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":81.28
+
+"Area_m2":0.0051893573632
+
+"Velocity_mps":7.28
+
+"Reynolds_No":92141
+
+"Relative_Roughness":0.000554
+
+"Friction_Factor":0.02086
+
+"Pressure_Drop_kPa":1.62
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+33:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":105.74
+
+"Area_m2":0.008782634339799998
+
+"Velocity_mps":4.3
+
+"Reynolds_No":70827
+
+"Relative_Roughness":0.000426
+
+"Friction_Factor":0.02112
+
+"Pressure_Drop_kPa":0.51
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+34:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":131.77
+
+"Area_m2":0.013638897992950002
+
+"Velocity_mps":2.77
+
+"Reynolds_No":56835
+
+"Relative_Roughness":0.000342
+
+"Friction_Factor":0.02157
+
+"Pressure_Drop_kPa":0.2
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+35:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":157.33
+
+"Area_m2":0.019443268550950004
+
+"Velocity_mps":1.94
+
+"Reynolds_No":47602
+
+"Relative_Roughness":0.000286
+
+"Friction_Factor":0.02208
+
+"Pressure_Drop_kPa":0.1
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+36:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":206.4
+
+"Area_m2":0.03346305408
+
+"Velocity_mps":1.13
+
+"Reynolds_No":36285
+
+"Relative_Roughness":0.000218
+
+"Friction_Factor":0.02307
+
+"Pressure_Drop_kPa":0.03
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+37:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":257.91
+
+"Area_m2":0.05224954974255001
+
+"Velocity_mps":0.72
+
+"Reynolds_No":29038
+
+"Relative_Roughness":0.000174
+
+"Friction_Factor":0.02408
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+38:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":306.41999999999996
+
+"Area_m2":0.07375312148219998
+
+"Velocity_mps":0.51
+
+"Reynolds_No":24441
+
+"Relative_Roughness":0.000147
+
+"Friction_Factor":0.02497
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+39:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":336.55
+
+"Area_m2":0.08897036641375
+
+"Velocity_mps":0.42
+
+"Reynolds_No":22253
+
+"Relative_Roughness":0.000134
+
+"Friction_Factor":0.02549
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+40:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":384.96
+
+"Area_m2":0.11640654535679999
+
+"Velocity_mps":0.32
+
+"Reynolds_No":19455
+
+"Relative_Roughness":0.000117
+
+"Friction_Factor":0.02628
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+41:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":433.17
+
+"Area_m2":0.14738827351095002
+
+"Velocity_mps":0.26
+
+"Reynolds_No":17289
+
+"Relative_Roughness":0.000104
+
+"Friction_Factor":0.02703
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+42:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":481.81
+
+"Area_m2":0.18234665817655
+
+"Velocity_mps":0.21
+
+"Reynolds_No":15544
+
+"Relative_Roughness":0.000093
+
+"Friction_Factor":0.02773
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+43:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":578.64
+
+"Area_m2":0.2630044480608
+
+"Velocity_mps":0.14
+
+"Reynolds_No":12943
+
+"Relative_Roughness":0.000078
+
+"Friction_Factor":0.02904
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+]
+
+"mass_flow":0.0817705891545554
+
+"volumetric_flow":0.037778012189404596
+
+"equivalent_length":{
+
+"Straight_Length_m":50
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":475.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+}
+
+
+
+
+
+Output 1.
+
+
+
+
+
+
+
+
+
+app
+
+
+
+Project
+
+
+
+Engineering
+
+
+
+BOQ
+
+
+
+Costing
+
+
+
+Export
+
+
+
+About
+
+
+
+⚙️ ENGINEERING
+
+Project:
+
+
+
+Client:
+
+
+
+Prepared By:
+
+
+
+Revision: 0
+
+
+
+
+
+Steam
+
+
+
+
+
+Condensate
+
+
+
+
+
+Distribution Network
+
+
+
+
+
+Design Summary
+
+
+
+Steam
+
+Steam Requirement Method
+
+
+
+
+
+Product Heating
+
+
+
+
+
+Heat Load (Coming Soon)
+
+
+
+
+
+Direct Steam Injection (Coming Soon)
+
+
+
+
+
+Heat Exchanger (Coming Soon)
+
+
+
+
+
+Sterilization (Coming Soon)
+
+
+
+Product Data
+
+Product Mass (kg)
+
+
+
+10.00
+
+
+
+
+
+Specific Heat (kJ/kg°C)
+
+
+
+4.19
+
+
+
+
+
+Initial Temperature (°C)
+
+
+
+25.00
+
+
+
+
+
+Final Temperature (°C)
+
+
+
+100.00
+
+
+
+
+
+Heating Time (minutes)
+
+
+
+30.00
+
+
+
+
+
+Steam Conditions
+
+Steam Type: Saturated Steam
+
+
+
+Steam Pressure (barg)
+
+
+
+3.00
+
+
+
+
+
+Distribution System
+
+Steam Pipe Length (m)
+
+
+
+50.00
+
+
+
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+
+
+
+Equivalent Length Details
+
+{
+
+"Straight_Length_m":50
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":475.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+{
+
+"selected_pipe":{
+
+"NPS":"24"
+
+"NB":600
+
+"OD_mm":609.6
+
+"Thickness_mm":30.96
+
+"ID_mm":578.64
+
+"Internal_Flow_Area_m2":0.2630044480608
+
+"Schedule":80
+
+"Pipe_Series":"ASME B36.10M"
+
+"Material":"CS"
+
+"Absolute_Roughness_mm":0.045
+
+"Weight_kg_per_m":442.11
+
+"Paint_Area_m2_per_m":NaN
+
+"Insulation_OD_mm":NaN
+
+"Max_Pressure_barg":NaN
+
+"Max_Temperature_C":NaN
+
+"Rate_Rs_per_m":NaN
+
+"Velocity_mps":0
+
+"Status":"Velocity Too Low"
+
+}
+
+"evaluation_history":[
+
+0:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":8.57
+
+"Area_m2":0.00005769096895
+
+"Velocity_mps":6.55
+
+"Reynolds_No":8739
+
+"Relative_Roughness":0.005251
+
+"Friction_Factor":0.03949
+
+"Pressure_Drop_kPa":12.04
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+1:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":11.459999999999999
+
+"Area_m2":0.00010316097179999998
+
+"Velocity_mps":3.66
+
+"Reynolds_No":6535
+
+"Relative_Roughness":0.003927
+
+"Friction_Factor":0.04006
+
+"Pressure_Drop_kPa":2.96
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+2:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":14.790000000000001
+
+"Area_m2":0.00017182349055
+
+"Velocity_mps":2.2
+
+"Reynolds_No":5064
+
+"Relative_Roughness":0.003043
+
+"Friction_Factor":0.04137
+
+"Pressure_Drop_kPa":0.89
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+3:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":18.53
+
+"Area_m2":0.00026970998695000005
+
+"Velocity_mps":1.4
+
+"Reynolds_No":4042
+
+"Relative_Roughness":0.002428
+
+"Friction_Factor":0.04314
+
+"Pressure_Drop_kPa":0.31
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+4:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":23.83
+
+"Area_m2":0.00044606102094999996
+
+"Velocity_mps":0.85
+
+"Reynolds_No":3143
+
+"Relative_Roughness":0.001888
+
+"Friction_Factor":0.04575
+
+"Pressure_Drop_kPa":0.1
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+5:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":30.02
+
+"Area_m2":0.0007078929142
+
+"Velocity_mps":0.53
+
+"Reynolds_No":2495
+
+"Relative_Roughness":0.001499
+
+"Friction_Factor":0.04874
+
+"Pressure_Drop_kPa":0.04
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+6:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":38.64
+
+"Area_m2":0.0011727904608
+
+"Velocity_mps":0.32
+
+"Reynolds_No":1938
+
+"Relative_Roughness":0.001165
+
+"Friction_Factor":0.03302
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+7:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":44.62
+
+"Area_m2":0.0015638868261999997
+
+"Velocity_mps":0.24
+
+"Reynolds_No":1678
+
+"Relative_Roughness":0.001009
+
+"Friction_Factor":0.03813
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+8:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":56.39
+
+"Area_m2":0.00249775811455
+
+"Velocity_mps":0.15
+
+"Reynolds_No":1328
+
+"Relative_Roughness":0.000798
+
+"Friction_Factor":0.04819
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+9:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":67.84
+
+"Area_m2":0.0036150796288
+
+"Velocity_mps":0.1
+
+"Reynolds_No":1104
+
+"Relative_Roughness":0.000663
+
+"Friction_Factor":0.05797
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+10:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":83.41000000000001
+
+"Area_m2":0.005464902672550002
+
+"Velocity_mps":0.07
+
+"Reynolds_No":898
+
+"Relative_Roughness":0.00054
+
+"Friction_Factor":0.07128
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+11:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":108.28
+
+"Area_m2":0.009209640623199998
+
+"Velocity_mps":0.04
+
+"Reynolds_No":692
+
+"Relative_Roughness":0.000416
+
+"Friction_Factor":0.09253
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+12:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":134.75
+
+"Area_m2":0.014262765343749999
+
+"Velocity_mps":0.03
+
+"Reynolds_No":556
+
+"Relative_Roughness":0.000334
+
+"Friction_Factor":0.11515
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+13:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":161.19
+
+"Area_m2":0.02040903074655
+
+"Velocity_mps":0.02
+
+"Reynolds_No":465
+
+"Relative_Roughness":0.000279
+
+"Friction_Factor":0.13775
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+14:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":210.92
+
+"Area_m2":0.03494473204719999
+
+"Velocity_mps":0.01
+
+"Reynolds_No":355
+
+"Relative_Roughness":0.000213
+
+"Friction_Factor":0.18024
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+15:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":263.73
+
+"Area_m2":0.05463428438295
+
+"Velocity_mps":0.01
+
+"Reynolds_No":284
+
+"Relative_Roughness":0.000171
+
+"Friction_Factor":0.22537
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+16:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":313.59
+
+"Area_m2":0.07724503950254999
+
+"Velocity_mps":0
+
+"Reynolds_No":239
+
+"Relative_Roughness":0.000143
+
+"Friction_Factor":0.26798
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+17:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":344.47
+
+"Area_m2":0.09320710079695001
+
+"Velocity_mps":0
+
+"Reynolds_No":217
+
+"Relative_Roughness":0.000131
+
+"Friction_Factor":0.29437
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+18:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":393.7
+
+"Area_m2":0.12175225649499999
+
+"Velocity_mps":0
+
+"Reynolds_No":190
+
+"Relative_Roughness":0.000114
+
+"Friction_Factor":0.33644
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+19:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":442.73
+
+"Area_m2":0.15396573945294997
+
+"Velocity_mps":0
+
+"Reynolds_No":169
+
+"Relative_Roughness":0.000102
+
+"Friction_Factor":0.37834
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+20:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":492.91
+
+"Area_m2":0.19084529059255
+
+"Velocity_mps":0
+
+"Reynolds_No":152
+
+"Relative_Roughness":0.000091
+
+"Friction_Factor":0.42122
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+21:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":592.12
+
+"Area_m2":0.2754010871512
+
+"Velocity_mps":0
+
+"Reynolds_No":126
+
+"Relative_Roughness":0.000076
+
+"Friction_Factor":0.506
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+22:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":7.890000000000001
+
+"Area_m2":0.00004889902455000001
+
+"Velocity_mps":7.73
+
+"Reynolds_No":9492
+
+"Relative_Roughness":0.005703
+
+"Friction_Factor":0.03951
+
+"Pressure_Drop_kPa":18.05
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+23:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":10.68
+
+"Area_m2":0.00008959601519999999
+
+"Velocity_mps":4.22
+
+"Reynolds_No":7012
+
+"Relative_Roughness":0.004213
+
+"Friction_Factor":0.03983
+
+"Pressure_Drop_kPa":4.15
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+24:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":13.900000000000002
+
+"Area_m2":0.00015176645500000004
+
+"Velocity_mps":2.49
+
+"Reynolds_No":5388
+
+"Relative_Roughness":0.003237
+
+"Friction_Factor":0.04099
+
+"Pressure_Drop_kPa":1.19
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+25:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":17.57
+
+"Area_m2":0.00024248769895
+
+"Velocity_mps":1.56
+
+"Reynolds_No":4262
+
+"Relative_Roughness":0.002561
+
+"Friction_Factor":0.04267
+
+"Pressure_Drop_kPa":0.4
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+26:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":22.79
+
+"Area_m2":0.00040797621054999996
+
+"Velocity_mps":0.93
+
+"Reynolds_No":3286
+
+"Relative_Roughness":0.001975
+
+"Friction_Factor":0.04524
+
+"Pressure_Drop_kPa":0.12
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+27:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":28.849999999999998
+
+"Area_m2":0.0006537893237499999
+
+"Velocity_mps":0.58
+
+"Reynolds_No":2596
+
+"Relative_Roughness":0.00156
+
+"Friction_Factor":0.04819
+
+"Pressure_Drop_kPa":0.04
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+28:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":37.35
+
+"Area_m2":0.0010957901737500002
+
+"Velocity_mps":0.34
+
+"Reynolds_No":2005
+
+"Relative_Roughness":0.001205
+
+"Friction_Factor":0.03192
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+29:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":43.22
+
+"Area_m2":0.0014672891782
+
+"Velocity_mps":0.26
+
+"Reynolds_No":1733
+
+"Relative_Roughness":0.001041
+
+"Friction_Factor":0.03693
+
+"Pressure_Drop_kPa":0.01
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+30:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":54.76
+
+"Area_m2":0.0023554455447999997
+
+"Velocity_mps":0.16
+
+"Reynolds_No":1368
+
+"Relative_Roughness":0.000822
+
+"Friction_Factor":0.0468
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+31:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":65.99
+
+"Area_m2":0.0034206012185499994
+
+"Velocity_mps":0.11
+
+"Reynolds_No":1135
+
+"Relative_Roughness":0.000682
+
+"Friction_Factor":0.05639
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+32:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":81.28
+
+"Area_m2":0.0051893573632
+
+"Velocity_mps":0.07
+
+"Reynolds_No":921
+
+"Relative_Roughness":0.000554
+
+"Friction_Factor":0.06946
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+33:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":105.74
+
+"Area_m2":0.008782634339799998
+
+"Velocity_mps":0.04
+
+"Reynolds_No":708
+
+"Relative_Roughness":0.000426
+
+"Friction_Factor":0.09036
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+34:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":131.77
+
+"Area_m2":0.013638897992950002
+
+"Velocity_mps":0.03
+
+"Reynolds_No":568
+
+"Relative_Roughness":0.000342
+
+"Friction_Factor":0.11261
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+35:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":157.33
+
+"Area_m2":0.019443268550950004
+
+"Velocity_mps":0.02
+
+"Reynolds_No":476
+
+"Relative_Roughness":0.000286
+
+"Friction_Factor":0.13445
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+36:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":206.4
+
+"Area_m2":0.03346305408
+
+"Velocity_mps":0.01
+
+"Reynolds_No":363
+
+"Relative_Roughness":0.000218
+
+"Friction_Factor":0.17638
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+37:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":257.91
+
+"Area_m2":0.05224954974255001
+
+"Velocity_mps":0.01
+
+"Reynolds_No":290
+
+"Relative_Roughness":0.000174
+
+"Friction_Factor":0.2204
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+38:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":306.41999999999996
+
+"Area_m2":0.07375312148219998
+
+"Velocity_mps":0.01
+
+"Reynolds_No":244
+
+"Relative_Roughness":0.000147
+
+"Friction_Factor":0.26186
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+39:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":336.55
+
+"Area_m2":0.08897036641375
+
+"Velocity_mps":0
+
+"Reynolds_No":223
+
+"Relative_Roughness":0.000134
+
+"Friction_Factor":0.2876
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+40:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":384.96
+
+"Area_m2":0.11640654535679999
+
+"Velocity_mps":0
+
+"Reynolds_No":195
+
+"Relative_Roughness":0.000117
+
+"Friction_Factor":0.32897
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+41:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":433.17
+
+"Area_m2":0.14738827351095002
+
+"Velocity_mps":0
+
+"Reynolds_No":173
+
+"Relative_Roughness":0.000104
+
+"Friction_Factor":0.37017
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+42:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":481.81
+
+"Area_m2":0.18234665817655
+
+"Velocity_mps":0
+
+"Reynolds_No":155
+
+"Relative_Roughness":0.000093
+
+"Friction_Factor":0.41174
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+43:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":578.64
+
+"Area_m2":0.2630044480608
+
+"Velocity_mps":0
+
+"Reynolds_No":129
+
+"Relative_Roughness":0.000078
+
+"Friction_Factor":0.49448
+
+"Pressure_Drop_kPa":0
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+]
+
+"mass_flow":0.000817705891545554
+
+"volumetric_flow":0.000377780121894046
+
+"equivalent_length":{
+
+"Straight_Length_m":50
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":475.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+}
+
+Output-2.
+
+
+
+
+
+app
+
+
+
+Project
+
+
+
+Engineering
+
+
+
+BOQ
+
+
+
+Costing
+
+
+
+Export
+
+
+
+About
+
+
+
+⚙️ ENGINEERING
+
+Project:
+
+
+
+Client:
+
+
+
+Prepared By:
+
+
+
+Revision: 0
+
+
+
+
+
+Steam
+
+
+
+
+
+Condensate
+
+
+
+
+
+Distribution Network
+
+
+
+
+
+Design Summary
+
+
+
+Steam
+
+Steam Requirement Method
+
+
+
+
+
+Product Heating
+
+
+
+
+
+Heat Load (Coming Soon)
+
+
+
+
+
+Direct Steam Injection (Coming Soon)
+
+
+
+
+
+Heat Exchanger (Coming Soon)
+
+
+
+
+
+Sterilization (Coming Soon)
+
+
+
+Product Data
+
+Product Mass (kg)
+
+
+
+50000.00
+
+
+
+
+
+Specific Heat (kJ/kg°C)
+
+
+
+4.19
+
+
+
+
+
+Initial Temperature (°C)
+
+
+
+25.00
+
+
+
+
+
+Final Temperature (°C)
+
+
+
+100.00
+
+
+
+
+
+Heating Time (minutes)
+
+
+
+30.00
+
+
+
+
+
+Steam Conditions
+
+Steam Type: Saturated Steam
+
+
+
+Steam Pressure (barg)
+
+
+
+3.00
+
+
+
+
+
+Distribution System
+
+Steam Pipe Length (m)
+
+
+
+50.00
+
+
+
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+
+
+
+Equivalent Length Details
+
+{...}
+
+{
+
+"selected_pipe":{
+
+"NPS":"12"
+
+"NB":300
+
+"OD_mm":323.9
+
+"Thickness_mm":10.31
+
+"ID_mm":313.59
+
+"Internal_Flow_Area_m2":0.07724503950254999
+
+"Schedule":40
+
+"Pipe_Series":"ASME B36.10M"
+
+"Material":"CS"
+
+"Absolute_Roughness_mm":0.045
+
+"Weight_kg_per_m":79.73
+
+"Paint_Area_m2_per_m":NaN
+
+"Insulation_OD_mm":NaN
+
+"Max_Pressure_barg":NaN
+
+"Max_Temperature_C":NaN
+
+"Rate_Rs_per_m":NaN
+
+"Velocity_mps":24.45
+
+"Reynolds_Number":1194109
+
+"Relative_Roughness":0.0001434994738352626
+
+"Friction_Factor":0.013941631409264766
+
+"Pressure_Drop_kPa":8.078981827435713
+
+"Pressure_Drop_bar":0.08078981827435713
+
+"Acceptable":true
+
+"Velocity_Check":true
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Check":true
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+"evaluation_history":[
+
+0:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":8.57
+
+"Area_m2":0.00005769096895
+
+"Velocity_mps":32741.7
+
+"Reynolds_No":43694354
+
+"Relative_Roughness":0.005251
+
+"Friction_Factor":0.03083
+
+"Pressure_Drop_kPa":234995870.98
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+1:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":11.459999999999999
+
+"Area_m2":0.00010316097179999998
+
+"Velocity_mps":18310.23
+
+"Reynolds_No":32675446
+
+"Relative_Roughness":0.003927
+
+"Friction_Factor":0.02827
+
+"Pressure_Drop_kPa":52303353.54
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+2:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":14.790000000000001
+
+"Area_m2":0.00017182349055
+
+"Velocity_mps":10993.26
+
+"Reynolds_No":25318500
+
+"Relative_Roughness":0.003043
+
+"Friction_Factor":0.02628
+
+"Pressure_Drop_kPa":14149798.66
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+3:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":18.53
+
+"Area_m2":0.00026970998695000005
+
+"Velocity_mps":7003.45
+
+"Reynolds_No":20208344
+
+"Relative_Roughness":0.002428
+
+"Friction_Factor":0.02469
+
+"Pressure_Drop_kPa":4501657.77
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+4:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":23.83
+
+"Area_m2":0.00044606102094999996
+
+"Velocity_mps":4234.62
+
+"Reynolds_No":15713832
+
+"Relative_Roughness":0.001888
+
+"Friction_Factor":0.02309
+
+"Pressure_Drop_kPa":1270012.75
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+5:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":30.02
+
+"Area_m2":0.0007078929142
+
+"Velocity_mps":2668.34
+
+"Reynolds_No":12473705
+
+"Relative_Roughness":0.001499
+
+"Friction_Factor":0.02176
+
+"Pressure_Drop_kPa":402603.01
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+6:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":38.64
+
+"Area_m2":0.0011727904608
+
+"Velocity_mps":1610.6
+
+"Reynolds_No":9691010
+
+"Relative_Roughness":0.001165
+
+"Friction_Factor":0.02043
+
+"Pressure_Drop_kPa":116442.11
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+7:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":44.62
+
+"Area_m2":0.0015638868261999997
+
+"Velocity_mps":1207.82
+
+"Reynolds_No":8392214
+
+"Relative_Roughness":0.001009
+
+"Friction_Factor":0.01974
+
+"Pressure_Drop_kPa":57847.56
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+8:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":56.39
+
+"Area_m2":0.00249775811455
+
+"Velocity_mps":756.24
+
+"Reynolds_No":6640550
+
+"Relative_Roughness":0.000798
+
+"Friction_Factor":0.01868
+
+"Pressure_Drop_kPa":18765.31
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+9:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":67.84
+
+"Area_m2":0.0036150796288
+
+"Velocity_mps":522.51
+
+"Reynolds_No":5519761
+
+"Relative_Roughness":0.000663
+
+"Friction_Factor":0.01792
+
+"Pressure_Drop_kPa":7800.82
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+10:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":83.41000000000001
+
+"Area_m2":0.005464902672550002
+
+"Velocity_mps":345.64
+
+"Reynolds_No":4489397
+
+"Relative_Roughness":0.00054
+
+"Friction_Factor":0.01714
+
+"Pressure_Drop_kPa":2959.81
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+11:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":108.28
+
+"Area_m2":0.009209640623199998
+
+"Velocity_mps":205.1
+
+"Reynolds_No":3458262
+
+"Relative_Roughness":0.000416
+
+"Friction_Factor":0.01626
+
+"Pressure_Drop_kPa":886.46
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+12:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":134.75
+
+"Area_m2":0.014262765343749999
+
+"Velocity_mps":132.44
+
+"Reynolds_No":2778928
+
+"Relative_Roughness":0.000334
+
+"Friction_Factor":0.0156
+
+"Pressure_Drop_kPa":327.89
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+13:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":161.19
+
+"Area_m2":0.02040903074655
+
+"Velocity_mps":92.55
+
+"Reynolds_No":2323101
+
+"Relative_Roughness":0.000279
+
+"Friction_Factor":0.01513
+
+"Pressure_Drop_kPa":146.75
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+14:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":210.92
+
+"Area_m2":0.03494473204719999
+
+"Velocity_mps":54.05
+
+"Reynolds_No":1775368
+
+"Relative_Roughness":0.000213
+
+"Friction_Factor":0.01454
+
+"Pressure_Drop_kPa":44.73
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+15:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":263.73
+
+"Area_m2":0.05463428438295
+
+"Velocity_mps":34.57
+
+"Reynolds_No":1419864
+
+"Relative_Roughness":0.000171
+
+"Friction_Factor":0.01416
+
+"Pressure_Drop_kPa":16.95
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+16:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":313.59
+
+"Area_m2":0.07724503950254999
+
+"Velocity_mps":24.45
+
+"Reynolds_No":1194109
+
+"Relative_Roughness":0.000143
+
+"Friction_Factor":0.01394
+
+"Pressure_Drop_kPa":8.08
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+17:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":344.47
+
+"Area_m2":0.09320710079695001
+
+"Velocity_mps":20.27
+
+"Reynolds_No":1087063
+
+"Relative_Roughness":0.000131
+
+"Friction_Factor":0.01385
+
+"Pressure_Drop_kPa":5.43
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+18:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":393.7
+
+"Area_m2":0.12175225649499999
+
+"Velocity_mps":15.51
+
+"Reynolds_No":951132
+
+"Relative_Roughness":0.000114
+
+"Friction_Factor":0.01377
+
+"Pressure_Drop_kPa":3.1
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+19:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":442.73
+
+"Area_m2":0.15396573945294997
+
+"Velocity_mps":12.27
+
+"Reynolds_No":845799
+
+"Relative_Roughness":0.000102
+
+"Friction_Factor":0.01373
+
+"Pressure_Drop_kPa":1.9
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+20:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":492.91
+
+"Area_m2":0.19084529059255
+
+"Velocity_mps":9.9
+
+"Reynolds_No":759694
+
+"Relative_Roughness":0.000091
+
+"Friction_Factor":0.01372
+
+"Pressure_Drop_kPa":1.22
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+21:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":592.12
+
+"Area_m2":0.2754010871512
+
+"Velocity_mps":6.86
+
+"Reynolds_No":632407
+
+"Relative_Roughness":0.000076
+
+"Friction_Factor":0.01378
+
+"Pressure_Drop_kPa":0.58
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+22:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":7.890000000000001
+
+"Area_m2":0.00004889902455000001
+
+"Velocity_mps":38628.59
+
+"Reynolds_No":47460153
+
+"Relative_Roughness":0.005703
+
+"Friction_Factor":0.03162
+
+"Pressure_Drop_kPa":361167011.05
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+23:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":10.68
+
+"Area_m2":0.00008959601519999999
+
+"Velocity_mps":21082.42
+
+"Reynolds_No":35061855
+
+"Relative_Roughness":0.004213
+
+"Friction_Factor":0.02886
+
+"Pressure_Drop_kPa":75209855.71
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+24:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":13.900000000000002
+
+"Area_m2":0.00015176645500000004
+
+"Velocity_mps":12446.1
+
+"Reynolds_No":26939612
+
+"Relative_Roughness":0.003237
+
+"Friction_Factor":0.02674
+
+"Pressure_Drop_kPa":19427761.91
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+25:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":17.57
+
+"Area_m2":0.00024248769895
+
+"Velocity_mps":7789.68
+
+"Reynolds_No":21312499
+
+"Relative_Roughness":0.002561
+
+"Friction_Factor":0.02505
+
+"Pressure_Drop_kPa":5893170.55
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+26:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":22.79
+
+"Area_m2":0.00040797621054999996
+
+"Velocity_mps":4629.93
+
+"Reynolds_No":16430918
+
+"Relative_Roughness":0.001975
+
+"Friction_Factor":0.02336
+
+"Pressure_Drop_kPa":1587993.27
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+27:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":28.849999999999998
+
+"Area_m2":0.0006537893237499999
+
+"Velocity_mps":2889.16
+
+"Reynolds_No":12979571
+
+"Relative_Roughness":0.00156
+
+"Friction_Factor":0.02198
+
+"Pressure_Drop_kPa":490198.01
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+28:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":37.35
+
+"Area_m2":0.0010957901737500002
+
+"Velocity_mps":1723.78
+
+"Reynolds_No":10025719
+
+"Relative_Roughness":0.001205
+
+"Friction_Factor":0.0206
+
+"Pressure_Drop_kPa":137455.68
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+29:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":43.22
+
+"Area_m2":0.0014672891782
+
+"Velocity_mps":1287.34
+
+"Reynolds_No":8664059
+
+"Relative_Roughness":0.001041
+
+"Friction_Factor":0.01989
+
+"Pressure_Drop_kPa":67512.52
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+30:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":54.76
+
+"Area_m2":0.0023554455447999997
+
+"Velocity_mps":801.93
+
+"Reynolds_No":6838214
+
+"Relative_Roughness":0.000822
+
+"Friction_Factor":0.01881
+
+"Pressure_Drop_kPa":21589.36
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+31:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":65.99
+
+"Area_m2":0.0034206012185499994
+
+"Velocity_mps":552.21
+
+"Reynolds_No":5674505
+
+"Relative_Roughness":0.000682
+
+"Friction_Factor":0.01803
+
+"Pressure_Drop_kPa":8889.6
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+32:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":81.28
+
+"Area_m2":0.0051893573632
+
+"Velocity_mps":364
+
+"Reynolds_No":4607045
+
+"Relative_Roughness":0.000554
+
+"Friction_Factor":0.01724
+
+"Pressure_Drop_kPa":3339.28
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+33:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":105.74
+
+"Area_m2":0.008782634339799998
+
+"Velocity_mps":215.07
+
+"Reynolds_No":3541334
+
+"Relative_Roughness":0.000426
+
+"Friction_Factor":0.01633
+
+"Pressure_Drop_kPa":988.37
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+34:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":131.77
+
+"Area_m2":0.013638897992950002
+
+"Velocity_mps":138.49
+
+"Reynolds_No":2841774
+
+"Relative_Roughness":0.000342
+
+"Friction_Factor":0.01567
+
+"Pressure_Drop_kPa":362.75
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+35:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":157.33
+
+"Area_m2":0.019443268550950004
+
+"Velocity_mps":97.15
+
+"Reynolds_No":2380097
+
+"Relative_Roughness":0.000286
+
+"Friction_Factor":0.01519
+
+"Pressure_Drop_kPa":163.52
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+36:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":206.4
+
+"Area_m2":0.03346305408
+
+"Velocity_mps":56.45
+
+"Reynolds_No":1814247
+
+"Relative_Roughness":0.000218
+
+"Friction_Factor":0.01458
+
+"Pressure_Drop_kPa":49.18
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+37:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":257.91
+
+"Area_m2":0.05224954974255001
+
+"Velocity_mps":36.15
+
+"Reynolds_No":1451904
+
+"Relative_Roughness":0.000174
+
+"Friction_Factor":0.01419
+
+"Pressure_Drop_kPa":18.66
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+38:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":306.41999999999996
+
+"Area_m2":0.07375312148219998
+
+"Velocity_mps":25.61
+
+"Reynolds_No":1222050
+
+"Relative_Roughness":0.000147
+
+"Friction_Factor":0.01397
+
+"Pressure_Drop_kPa":8.91
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+39:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":336.55
+
+"Area_m2":0.08897036641375
+
+"Velocity_mps":21.23
+
+"Reynolds_No":1112645
+
+"Relative_Roughness":0.000134
+
+"Friction_Factor":0.01387
+
+"Pressure_Drop_kPa":5.99
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+40:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":384.96
+
+"Area_m2":0.11640654535679999
+
+"Velocity_mps":16.23
+
+"Reynolds_No":972726
+
+"Relative_Roughness":0.000117
+
+"Friction_Factor":0.01378
+
+"Pressure_Drop_kPa":3.4
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+41:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":433.17
+
+"Area_m2":0.14738827351095002
+
+"Velocity_mps":12.82
+
+"Reynolds_No":864466
+
+"Relative_Roughness":0.000104
+
+"Friction_Factor":0.01373
+
+"Pressure_Drop_kPa":2.08
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+42:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":481.81
+
+"Area_m2":0.18234665817655
+
+"Velocity_mps":10.36
+
+"Reynolds_No":777196
+
+"Relative_Roughness":0.000093
+
+"Friction_Factor":0.01372
+
+"Pressure_Drop_kPa":1.34
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+43:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":578.64
+
+"Area_m2":0.2630044480608
+
+"Velocity_mps":7.18
+
+"Reynolds_No":647139
+
+"Relative_Roughness":0.000078
+
+"Friction_Factor":0.01377
+
+"Pressure_Drop_kPa":0.63
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+]
+
+"mass_flow":4.08852945772777
+
+"volumetric_flow":1.8889006094702296
+
+"equivalent_length":{
+
+"Straight_Length_m":50
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":475.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+}
+
+
+
+Output 3.
+
+
+
+
+
+
+
+app
+
+
+
+Project
+
+
+
+Engineering
+
+
+
+BOQ
+
+
+
+Costing
+
+
+
+Export
+
+
+
+About
+
+
+
+⚙️ ENGINEERING
+
+Project:
+
+
+
+Client:
+
+
+
+Prepared By:
+
+
+
+Revision: 0
+
+
+
+
+
+Steam
+
+
+
+
+
+Condensate
+
+
+
+
+
+Distribution Network
+
+
+
+
+
+Design Summary
+
+
+
+Steam
+
+Steam Requirement Method
+
+
+
+
+
+Product Heating
+
+
+
+
+
+Heat Load (Coming Soon)
+
+
+
+
+
+Direct Steam Injection (Coming Soon)
+
+
+
+
+
+Heat Exchanger (Coming Soon)
+
+
+
+
+
+Sterilization (Coming Soon)
+
+
+
+Product Data
+
+Product Mass (kg)
+
+
+
+50000.00
+
+
+
+
+
+Specific Heat (kJ/kg°C)
+
+
+
+4.19
+
+
+
+
+
+Initial Temperature (°C)
+
+
+
+25.00
+
+
+
+
+
+Final Temperature (°C)
+
+
+
+100.00
+
+
+
+
+
+Heating Time (minutes)
+
+
+
+30.00
+
+
+
+
+
+Steam Conditions
+
+Steam Type: Saturated Steam
+
+
+
+Steam Pressure (barg)
+
+
+
+3.00
+
+
+
+
+
+Distribution System
+
+Steam Pipe Length (m)
+
+
+
+5000.00
+
+
+
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+
+
+
+Equivalent Length Details
+
+{
+
+"Straight_Length_m":5000
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":5425.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+{
+
+"selected_pipe":{
+
+"NPS":"14"
+
+"NB":350
+
+"OD_mm":355.6
+
+"Thickness_mm":11.13
+
+"ID_mm":344.47
+
+"Internal_Flow_Area_m2":0.09320710079695001
+
+"Schedule":40
+
+"Pipe_Series":"ASME B36.10M"
+
+"Material":"CS"
+
+"Absolute_Roughness_mm":0.045
+
+"Weight_kg_per_m":94.55
+
+"Paint_Area_m2_per_m":NaN
+
+"Insulation_OD_mm":NaN
+
+"Max_Pressure_barg":NaN
+
+"Max_Temperature_C":NaN
+
+"Rate_Rs_per_m":NaN
+
+"Velocity_mps":20.27
+
+"Reynolds_Number":1087063
+
+"Relative_Roughness":0.0001306354689813336
+
+"Friction_Factor":0.01385439716811527
+
+"Pressure_Drop_kPa":93.91515689984122
+
+"Pressure_Drop_bar":0.9391515689984122
+
+"Acceptable":true
+
+"Velocity_Check":true
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Check":true
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+"evaluation_history":[
+
+0:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":8.57
+
+"Area_m2":0.00005769096895
+
+"Velocity_mps":32741.7
+
+"Reynolds_No":43694354
+
+"Relative_Roughness":0.005251
+
+"Friction_Factor":0.03083
+
+"Pressure_Drop_kPa":20893331478.19
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+1:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":11.459999999999999
+
+"Area_m2":0.00010316097179999998
+
+"Velocity_mps":18310.23
+
+"Reynolds_No":32675446
+
+"Relative_Roughness":0.003927
+
+"Friction_Factor":0.02827
+
+"Pressure_Drop_kPa":4482894609.29
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+2:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":14.790000000000001
+
+"Area_m2":0.00017182349055
+
+"Velocity_mps":10993.26
+
+"Reynolds_No":25318500
+
+"Relative_Roughness":0.003043
+
+"Friction_Factor":0.02628
+
+"Pressure_Drop_kPa":1164539933.28
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+3:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":18.53
+
+"Area_m2":0.00026970998695000005
+
+"Velocity_mps":7003.45
+
+"Reynolds_No":20208344
+
+"Relative_Roughness":0.002428
+
+"Friction_Factor":0.02469
+
+"Pressure_Drop_kPa":354657318.95
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+4:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":23.83
+
+"Area_m2":0.00044606102094999996
+
+"Velocity_mps":4234.62
+
+"Reynolds_No":15713832
+
+"Relative_Roughness":0.001888
+
+"Friction_Factor":0.02309
+
+"Pressure_Drop_kPa":94350501.03
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+5:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":30.02
+
+"Area_m2":0.0007078929142
+
+"Velocity_mps":2668.34
+
+"Reynolds_No":12473705
+
+"Relative_Roughness":0.001499
+
+"Friction_Factor":0.02176
+
+"Pressure_Drop_kPa":28045086.96
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+6:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":38.64
+
+"Area_m2":0.0011727904608
+
+"Velocity_mps":1610.6
+
+"Reynolds_No":9691010
+
+"Relative_Roughness":0.001165
+
+"Friction_Factor":0.02043
+
+"Pressure_Drop_kPa":7464680.45
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+7:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":44.62
+
+"Area_m2":0.0015638868261999997
+
+"Velocity_mps":1207.82
+
+"Reynolds_No":8392214
+
+"Relative_Roughness":0.001009
+
+"Friction_Factor":0.01974
+
+"Pressure_Drop_kPa":3514455.96
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+8:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":56.39
+
+"Area_m2":0.00249775811455
+
+"Velocity_mps":756.24
+
+"Reynolds_No":6640550
+
+"Relative_Roughness":0.000798
+
+"Friction_Factor":0.01868
+
+"Pressure_Drop_kPa":1033904.32
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+9:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":67.84
+
+"Area_m2":0.0036150796288
+
+"Velocity_mps":522.51
+
+"Reynolds_No":5519761
+
+"Relative_Roughness":0.000663
+
+"Friction_Factor":0.01792
+
+"Pressure_Drop_kPa":394211.93
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+10:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":83.41000000000001
+
+"Area_m2":0.005464902672550002
+
+"Velocity_mps":345.64
+
+"Reynolds_No":4489397
+
+"Relative_Roughness":0.00054
+
+"Friction_Factor":0.01714
+
+"Pressure_Drop_kPa":134489.32
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+11:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":108.28
+
+"Area_m2":0.009209640623199998
+
+"Velocity_mps":205.1
+
+"Reynolds_No":3458262
+
+"Relative_Roughness":0.000416
+
+"Friction_Factor":0.01626
+
+"Pressure_Drop_kPa":34719.85
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+12:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":134.75
+
+"Area_m2":0.014262765343749999
+
+"Velocity_mps":132.44
+
+"Reynolds_No":2778928
+
+"Relative_Roughness":0.000334
+
+"Friction_Factor":0.0156
+
+"Pressure_Drop_kPa":11208.04
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+13:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":161.19
+
+"Area_m2":0.02040903074655
+
+"Velocity_mps":92.55
+
+"Reynolds_No":2323101
+
+"Relative_Roughness":0.000279
+
+"Friction_Factor":0.01513
+
+"Pressure_Drop_kPa":4454.46
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+14:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":210.92
+
+"Area_m2":0.03494473204719999
+
+"Velocity_mps":54.05
+
+"Reynolds_No":1775368
+
+"Relative_Roughness":0.000213
+
+"Friction_Factor":0.01454
+
+"Pressure_Drop_kPa":1123.56
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+15:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":263.73
+
+"Area_m2":0.05463428438295
+
+"Velocity_mps":34.57
+
+"Reynolds_No":1419864
+
+"Relative_Roughness":0.000171
+
+"Friction_Factor":0.01416
+
+"Pressure_Drop_kPa":360.71
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+16:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":313.59
+
+"Area_m2":0.07724503950254999
+
+"Velocity_mps":24.45
+
+"Reynolds_No":1194109
+
+"Relative_Roughness":0.000143
+
+"Friction_Factor":0.01394
+
+"Pressure_Drop_kPa":150.5
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+17:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":344.47
+
+"Area_m2":0.09320710079695001
+
+"Velocity_mps":20.27
+
+"Reynolds_No":1087063
+
+"Relative_Roughness":0.000131
+
+"Friction_Factor":0.01385
+
+"Pressure_Drop_kPa":93.92
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+18:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":393.7
+
+"Area_m2":0.12175225649499999
+
+"Velocity_mps":15.51
+
+"Reynolds_No":951132
+
+"Relative_Roughness":0.000114
+
+"Friction_Factor":0.01377
+
+"Pressure_Drop_kPa":48.19
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+19:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":442.73
+
+"Area_m2":0.15396573945294997
+
+"Velocity_mps":12.27
+
+"Reynolds_No":845799
+
+"Relative_Roughness":0.000102
+
+"Friction_Factor":0.01373
+
+"Pressure_Drop_kPa":26.9
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+20:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":492.91
+
+"Area_m2":0.19084529059255
+
+"Velocity_mps":9.9
+
+"Reynolds_No":759694
+
+"Relative_Roughness":0.000091
+
+"Friction_Factor":0.01372
+
+"Pressure_Drop_kPa":15.83
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+21:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":592.12
+
+"Area_m2":0.2754010871512
+
+"Velocity_mps":6.86
+
+"Reynolds_No":632407
+
+"Relative_Roughness":0.000076
+
+"Friction_Factor":0.01378
+
+"Pressure_Drop_kPa":6.44
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+22:{
+
+"NPS":"1/8"
+
+"NB":6
+
+"ID_mm":7.890000000000001
+
+"Area_m2":0.00004889902455000001
+
+"Velocity_mps":38628.59
+
+"Reynolds_No":47460153
+
+"Relative_Roughness":0.005703
+
+"Friction_Factor":0.03162
+
+"Pressure_Drop_kPa":32396157329.76
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+23:{
+
+"NPS":"1/4"
+
+"NB":8
+
+"ID_mm":10.68
+
+"Area_m2":0.00008959601519999999
+
+"Velocity_mps":21082.42
+
+"Reynolds_No":35061855
+
+"Relative_Roughness":0.004213
+
+"Friction_Factor":0.02886
+
+"Pressure_Drop_kPa":6509513101.22
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+24:{
+
+"NPS":"3/8"
+
+"NB":10
+
+"ID_mm":13.900000000000002
+
+"Area_m2":0.00015176645500000004
+
+"Velocity_mps":12446.1
+
+"Reynolds_No":26939612
+
+"Relative_Roughness":0.003237
+
+"Friction_Factor":0.02674
+
+"Pressure_Drop_kPa":1616097551.73
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+25:{
+
+"NPS":"1/2"
+
+"NB":15
+
+"ID_mm":17.57
+
+"Area_m2":0.00024248769895
+
+"Velocity_mps":7789.68
+
+"Reynolds_No":21312499
+
+"Relative_Roughness":0.002561
+
+"Friction_Factor":0.02505
+
+"Pressure_Drop_kPa":469428323.15
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+26:{
+
+"NPS":"3/4"
+
+"NB":20
+
+"ID_mm":22.79
+
+"Area_m2":0.00040797621054999996
+
+"Velocity_mps":4629.93
+
+"Reynolds_No":16430918
+
+"Relative_Roughness":0.001975
+
+"Friction_Factor":0.02336
+
+"Pressure_Drop_kPa":119308729.08
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+27:{
+
+"NPS":"1"
+
+"NB":25
+
+"ID_mm":28.849999999999998
+
+"Area_m2":0.0006537893237499999
+
+"Velocity_mps":2889.16
+
+"Reynolds_No":12979571
+
+"Relative_Roughness":0.00156
+
+"Friction_Factor":0.02198
+
+"Pressure_Drop_kPa":34553708.94
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+28:{
+
+"NPS":"1-1/4"
+
+"NB":32
+
+"ID_mm":37.35
+
+"Area_m2":0.0010957901737500002
+
+"Velocity_mps":1723.78
+
+"Reynolds_No":10025719
+
+"Relative_Roughness":0.001205
+
+"Friction_Factor":0.0206
+
+"Pressure_Drop_kPa":8918016.26
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+29:{
+
+"NPS":"1-1/2"
+
+"NB":40
+
+"ID_mm":43.22
+
+"Area_m2":0.0014672891782
+
+"Velocity_mps":1287.34
+
+"Reynolds_No":8664059
+
+"Relative_Roughness":0.001041
+
+"Friction_Factor":0.01989
+
+"Pressure_Drop_kPa":4152428.57
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+30:{
+
+"NPS":"2"
+
+"NB":50
+
+"ID_mm":54.76
+
+"Area_m2":0.0023554455447999997
+
+"Velocity_mps":801.93
+
+"Reynolds_No":6838214
+
+"Relative_Roughness":0.000822
+
+"Friction_Factor":0.01881
+
+"Pressure_Drop_kPa":1205019.93
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+31:{
+
+"NPS":"2-1/2"
+
+"NB":65
+
+"ID_mm":65.99
+
+"Area_m2":0.0034206012185499994
+
+"Velocity_mps":552.21
+
+"Reynolds_No":5674505
+
+"Relative_Roughness":0.000682
+
+"Friction_Factor":0.01803
+
+"Pressure_Drop_kPa":455312.99
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+32:{
+
+"NPS":"3"
+
+"NB":80
+
+"ID_mm":81.28
+
+"Area_m2":0.0051893573632
+
+"Velocity_mps":364
+
+"Reynolds_No":4607045
+
+"Relative_Roughness":0.000554
+
+"Friction_Factor":0.01724
+
+"Pressure_Drop_kPa":153850.51
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+33:{
+
+"NPS":"4"
+
+"NB":100
+
+"ID_mm":105.74
+
+"Area_m2":0.008782634339799998
+
+"Velocity_mps":215.07
+
+"Reynolds_No":3541334
+
+"Relative_Roughness":0.000426
+
+"Friction_Factor":0.01633
+
+"Pressure_Drop_kPa":39262.97
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+34:{
+
+"NPS":"5"
+
+"NB":125
+
+"ID_mm":131.77
+
+"Area_m2":0.013638897992950002
+
+"Velocity_mps":138.49
+
+"Reynolds_No":2841774
+
+"Relative_Roughness":0.000342
+
+"Friction_Factor":0.01567
+
+"Pressure_Drop_kPa":12579.21
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+35:{
+
+"NPS":"6"
+
+"NB":150
+
+"ID_mm":157.33
+
+"Area_m2":0.019443268550950004
+
+"Velocity_mps":97.15
+
+"Reynolds_No":2380097
+
+"Relative_Roughness":0.000286
+
+"Friction_Factor":0.01519
+
+"Pressure_Drop_kPa":5045.66
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+36:{
+
+"NPS":"8"
+
+"NB":200
+
+"ID_mm":206.4
+
+"Area_m2":0.03346305408
+
+"Velocity_mps":56.45
+
+"Reynolds_No":1814247
+
+"Relative_Roughness":0.000218
+
+"Friction_Factor":0.01458
+
+"Pressure_Drop_kPa":1254.94
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+37:{
+
+"NPS":"10"
+
+"NB":250
+
+"ID_mm":257.91
+
+"Area_m2":0.05224954974255001
+
+"Velocity_mps":36.15
+
+"Reynolds_No":1451904
+
+"Relative_Roughness":0.000174
+
+"Friction_Factor":0.01419
+
+"Pressure_Drop_kPa":403.9
+
+"Velocity_Status":"Too High"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+38:{
+
+"NPS":"12"
+
+"NB":300
+
+"ID_mm":306.41999999999996
+
+"Area_m2":0.07375312148219998
+
+"Velocity_mps":25.61
+
+"Reynolds_No":1222050
+
+"Relative_Roughness":0.000147
+
+"Friction_Factor":0.01397
+
+"Pressure_Drop_kPa":169.08
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+39:{
+
+"NPS":"14"
+
+"NB":350
+
+"ID_mm":336.55
+
+"Area_m2":0.08897036641375
+
+"Velocity_mps":21.23
+
+"Reynolds_No":1112645
+
+"Relative_Roughness":0.000134
+
+"Friction_Factor":0.01387
+
+"Pressure_Drop_kPa":105.53
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+40:{
+
+"NPS":"16"
+
+"NB":400
+
+"ID_mm":384.96
+
+"Area_m2":0.11640654535679999
+
+"Velocity_mps":16.23
+
+"Reynolds_No":972726
+
+"Relative_Roughness":0.000117
+
+"Friction_Factor":0.01378
+
+"Pressure_Drop_kPa":53.89
+
+"Velocity_Status":"Acceptable"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Within Allowable Limit"
+
+}
+
+41:{
+
+"NPS":"18"
+
+"NB":450
+
+"ID_mm":433.17
+
+"Area_m2":0.14738827351095002
+
+"Velocity_mps":12.82
+
+"Reynolds_No":864466
+
+"Relative_Roughness":0.000104
+
+"Friction_Factor":0.01373
+
+"Pressure_Drop_kPa":29.97
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+42:{
+
+"NPS":"20"
+
+"NB":500
+
+"ID_mm":481.81
+
+"Area_m2":0.18234665817655
+
+"Velocity_mps":10.36
+
+"Reynolds_No":777196
+
+"Relative_Roughness":0.000093
+
+"Friction_Factor":0.01372
+
+"Pressure_Drop_kPa":17.71
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+43:{
+
+"NPS":"24"
+
+"NB":600
+
+"ID_mm":578.64
+
+"Area_m2":0.2630044480608
+
+"Velocity_mps":7.18
+
+"Reynolds_No":647139
+
+"Relative_Roughness":0.000078
+
+"Friction_Factor":0.01377
+
+"Pressure_Drop_kPa":7.21
+
+"Velocity_Status":"Too Low"
+
+"Pressure_Drop_Status":"Acceptable"
+
+"Overall_Status":"Not Acceptable"
+
+}
+
+]
+
+"mass_flow":4.08852945772777
+
+"volumetric_flow":1.8889006094702296
+
+"equivalent_length":{
+
+"Straight_Length_m":5000
+
+"Equivalent_Fittings_Length_m":425.879
+
+"Total_Equivalent_Length_m":5425.879
+
+"Fitting_Details":[
+
+0:{
+
+"Fitting_Code":"ELBOW_90_LR"
+
+"Description":"90° Long Radius Elbow"
+
+"Quantity":8
+
+"Le_over_D":30
+
+"Equivalent_Length_m":138.874
+
+}
+
+1:{
+
+"Fitting_Code":"TEE_THROUGH"
+
+"Description":"Tee Through"
+
+"Quantity":2
+
+"Le_over_D":20
+
+"Equivalent_Length_m":23.146
+
+}
+
+2:{
+
+"Fitting_Code":"GATE_VALVE"
+
+"Description":"Gate Valve"
+
+"Quantity":2
+
+"Le_over_D":8
+
+"Equivalent_Length_m":9.258
+
+}
+
+3:{
+
+"Fitting_Code":"GLOBE_VALVE"
+
+"Description":"Globe Valve"
+
+"Quantity":1
+
+"Le_over_D":340
+
+"Equivalent_Length_m":196.738
+
+}
+
+4:{
+
+"Fitting_Code":"Y_STRAINER"
+
+"Description":"Y Strainer"
+
+"Quantity":1
+
+"Le_over_D":100
+
+"Equivalent_Length_m":57.864
+
+}
+
+]
+
+}
+
+}
+
+Output 4.
+
+
+app
+
+Project
+
+Engineering
+
+BOQ
+
+Costing
+
+Export
+
+About
+
+⚙️ ENGINEERING
+Project:
+
+Client:
+
+Prepared By:
+
+Revision: 0
+
+
+Steam
+
+
+Condensate
+
+
+Distribution Network
+
+
+Design Summary
+
+Steam
+Steam Requirement Method
+
+
+Product Heating
+
+
+Heat Load (Coming Soon)
+
+
+Direct Steam Injection (Coming Soon)
+
+
+Heat Exchanger (Coming Soon)
+
+
+Sterilization (Coming Soon)
+
+Product Data
+Product Mass (kg)
+
+50000.00
+
+
+Specific Heat (kJ/kg°C)
+
+4.19
+
+
+Initial Temperature (°C)
+
+25.00
+
+
+Final Temperature (°C)
+
+100.00
+
+
+Heating Time (minutes)
+
+30.00
+
+
+Steam Conditions
+Steam Type: Saturated Steam
+
+Steam Pressure (barg)
+
+10.00
+
+
+Distribution System
+Steam Pipe Length (m)
+
+5000.00
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+Equivalent Length Details
+{
+"Straight_Length_m":5000
+"Equivalent_Fittings_Length_m":425.879
+"Total_Equivalent_Length_m":5425.879
+"Fitting_Details":[
+0:{
+"Fitting_Code":"ELBOW_90_LR"
+"Description":"90° Long Radius Elbow"
+"Quantity":8
+"Le_over_D":30
+"Equivalent_Length_m":138.874
+}
+1:{
+"Fitting_Code":"TEE_THROUGH"
+"Description":"Tee Through"
+"Quantity":2
+"Le_over_D":20
+"Equivalent_Length_m":23.146
+}
+2:{
+"Fitting_Code":"GATE_VALVE"
+"Description":"Gate Valve"
+"Quantity":2
+"Le_over_D":8
+"Equivalent_Length_m":9.258
+}
+3:{
+"Fitting_Code":"GLOBE_VALVE"
+"Description":"Globe Valve"
+"Quantity":1
+"Le_over_D":340
+"Equivalent_Length_m":196.738
+}
+4:{
+"Fitting_Code":"Y_STRAINER"
+"Description":"Y Strainer"
+"Quantity":1
+"Le_over_D":100
+"Equivalent_Length_m":57.864
+}
+]
+}
+{
+"selected_pipe":{
+"NPS":"24"
+"NB":600
+"OD_mm":609.6
+"Thickness_mm":30.96
+"ID_mm":578.64
+"Internal_Flow_Area_m2":0.2630044480608
+"Schedule":80
+"Pipe_Series":"ASME B36.10M"
+"Material":"CS"
+"Absolute_Roughness_mm":0.045
+"Weight_kg_per_m":442.11
+"Paint_Area_m2_per_m":NaN
+"Insulation_OD_mm":NaN
+"Max_Pressure_barg":NaN
+"Max_Temperature_C":NaN
+"Rate_Rs_per_m":NaN
+"Velocity_mps":2.88
+"Status":"Velocity Too Low"
+}
+"evaluation_history":[
+0:{
+"NPS":"1/8"
+"NB":6
+"ID_mm":8.57
+"Area_m2":0.00005769096895
+"Velocity_mps":13144.75
+"Reynolds_No":39001005
+"Relative_Roughness":0.005251
+"Friction_Factor":0.03083
+"Pressure_Drop_kPa":8941495565.61
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+1:{
+"NPS":"1/4"
+"NB":8
+"ID_mm":11.459999999999999
+"Area_m2":0.00010316097179999998
+"Velocity_mps":7350.97
+"Reynolds_No":29165673
+"Relative_Roughness":0.003927
+"Friction_Factor":0.02827
+"Pressure_Drop_kPa":1918518886.4
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+2:{
+"NPS":"3/8"
+"NB":10
+"ID_mm":14.790000000000001
+"Area_m2":0.00017182349055
+"Velocity_mps":4413.44
+"Reynolds_No":22598960
+"Relative_Roughness":0.003043
+"Friction_Factor":0.02628
+"Pressure_Drop_kPa":498389781.27
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+3:{
+"NPS":"1/2"
+"NB":15
+"ID_mm":18.53
+"Area_m2":0.00026970998695000005
+"Velocity_mps":2811.66
+"Reynolds_No":18037702
+"Relative_Roughness":0.002428
+"Friction_Factor":0.02469
+"Pressure_Drop_kPa":151786577.16
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+4:{
+"NPS":"3/4"
+"NB":20
+"ID_mm":23.83
+"Area_m2":0.00044606102094999996
+"Velocity_mps":1700.07
+"Reynolds_No":14025959
+"Relative_Roughness":0.001888
+"Friction_Factor":0.02309
+"Pressure_Drop_kPa":40381752.64
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+5:{
+"NPS":"1"
+"NB":25
+"ID_mm":30.02
+"Area_m2":0.0007078929142
+"Velocity_mps":1071.25
+"Reynolds_No":11133865
+"Relative_Roughness":0.001499
+"Friction_Factor":0.02176
+"Pressure_Drop_kPa":12003859.75
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+6:{
+"NPS":"1-1/4"
+"NB":32
+"ID_mm":38.64
+"Area_m2":0.0011727904608
+"Velocity_mps":646.61
+"Reynolds_No":8650068
+"Relative_Roughness":0.001165
+"Friction_Factor":0.02044
+"Pressure_Drop_kPa":3195318.39
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+7:{
+"NPS":"1-1/2"
+"NB":40
+"ID_mm":44.62
+"Area_m2":0.0015638868261999997
+"Velocity_mps":484.9
+"Reynolds_No":7490780
+"Relative_Roughness":0.001009
+"Friction_Factor":0.01974
+"Pressure_Drop_kPa":1504499.84
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+8:{
+"NPS":"2"
+"NB":50
+"ID_mm":56.39
+"Area_m2":0.00249775811455
+"Velocity_mps":303.61
+"Reynolds_No":5927267
+"Relative_Roughness":0.000798
+"Friction_Factor":0.01869
+"Pressure_Drop_kPa":442675.03
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+9:{
+"NPS":"2-1/2"
+"NB":65
+"ID_mm":67.84
+"Area_m2":0.0036150796288
+"Velocity_mps":209.77
+"Reynolds_No":4926866
+"Relative_Roughness":0.000663
+"Friction_Factor":0.01794
+"Pressure_Drop_kPa":168816.23
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+10:{
+"NPS":"3"
+"NB":80
+"ID_mm":83.41000000000001
+"Area_m2":0.005464902672550002
+"Velocity_mps":138.76
+"Reynolds_No":4007177
+"Relative_Roughness":0.00054
+"Friction_Factor":0.01716
+"Pressure_Drop_kPa":57609.82
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+11:{
+"NPS":"4"
+"NB":100
+"ID_mm":108.28
+"Area_m2":0.009209640623199998
+"Velocity_mps":82.34
+"Reynolds_No":3086799
+"Relative_Roughness":0.000416
+"Friction_Factor":0.01628
+"Pressure_Drop_kPa":14880.5
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+12:{
+"NPS":"5"
+"NB":125
+"ID_mm":134.75
+"Area_m2":0.014262765343749999
+"Velocity_mps":53.17
+"Reynolds_No":2480435
+"Relative_Roughness":0.000334
+"Friction_Factor":0.01564
+"Pressure_Drop_kPa":4806.74
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+13:{
+"NPS":"6"
+"NB":150
+"ID_mm":161.19
+"Area_m2":0.02040903074655
+"Velocity_mps":37.16
+"Reynolds_No":2073569
+"Relative_Roughness":0.000279
+"Friction_Factor":0.01517
+"Pressure_Drop_kPa":1911.72
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+14:{
+"NPS":"8"
+"NB":200
+"ID_mm":210.92
+"Area_m2":0.03494473204719999
+"Velocity_mps":21.7
+"Reynolds_No":1584670
+"Relative_Roughness":0.000213
+"Friction_Factor":0.0146
+"Pressure_Drop_kPa":482.89
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+15:{
+"NPS":"10"
+"NB":250
+"ID_mm":263.73
+"Area_m2":0.05463428438295
+"Velocity_mps":13.88
+"Reynolds_No":1267352
+"Relative_Roughness":0.000171
+"Friction_Factor":0.01424
+"Pressure_Drop_kPa":155.27
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+16:{
+"NPS":"12"
+"NB":300
+"ID_mm":313.59
+"Area_m2":0.07724503950254999
+"Velocity_mps":9.82
+"Reynolds_No":1065846
+"Relative_Roughness":0.000143
+"Friction_Factor":0.01404
+"Pressure_Drop_kPa":64.87
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+17:{
+"NPS":"14"
+"NB":350
+"ID_mm":344.47
+"Area_m2":0.09320710079695001
+"Velocity_mps":8.14
+"Reynolds_No":970298
+"Relative_Roughness":0.000131
+"Friction_Factor":0.01397
+"Pressure_Drop_kPa":40.52
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+18:{
+"NPS":"16"
+"NB":400
+"ID_mm":393.7
+"Area_m2":0.12175225649499999
+"Velocity_mps":6.23
+"Reynolds_No":848968
+"Relative_Roughness":0.000114
+"Friction_Factor":0.0139
+"Pressure_Drop_kPa":20.82
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+19:{
+"NPS":"18"
+"NB":450
+"ID_mm":442.73
+"Area_m2":0.15396573945294997
+"Velocity_mps":4.93
+"Reynolds_No":754949
+"Relative_Roughness":0.000102
+"Friction_Factor":0.01387
+"Pressure_Drop_kPa":11.63
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+20:{
+"NPS":"20"
+"NB":500
+"ID_mm":492.91
+"Area_m2":0.19084529059255
+"Velocity_mps":3.97
+"Reynolds_No":678093
+"Relative_Roughness":0.000091
+"Friction_Factor":0.01388
+"Pressure_Drop_kPa":6.85
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+21:{
+"NPS":"24"
+"NB":600
+"ID_mm":592.12
+"Area_m2":0.2754010871512
+"Velocity_mps":2.75
+"Reynolds_No":564478
+"Relative_Roughness":0.000076
+"Friction_Factor":0.01397
+"Pressure_Drop_kPa":2.79
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+22:{
+"NPS":"1/8"
+"NB":6
+"ID_mm":7.890000000000001
+"Area_m2":0.00004889902455000001
+"Velocity_mps":15508.15
+"Reynolds_No":42362308
+"Relative_Roughness":0.005703
+"Friction_Factor":0.03162
+"Pressure_Drop_kPa":13864204011.1
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+23:{
+"NPS":"1/4"
+"NB":8
+"ID_mm":10.68
+"Area_m2":0.00008959601519999999
+"Velocity_mps":8463.92
+"Reynolds_No":31295750
+"Relative_Roughness":0.004213
+"Friction_Factor":0.02886
+"Pressure_Drop_kPa":2785829770.14
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+24:{
+"NPS":"3/8"
+"NB":10
+"ID_mm":13.900000000000002
+"Area_m2":0.00015176645500000004
+"Velocity_mps":4996.71
+"Reynolds_No":24045943
+"Relative_Roughness":0.003237
+"Friction_Factor":0.02675
+"Pressure_Drop_kPa":691640247.1
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+25:{
+"NPS":"1/2"
+"NB":15
+"ID_mm":17.57
+"Area_m2":0.00024248769895
+"Velocity_mps":3127.31
+"Reynolds_No":19023256
+"Relative_Roughness":0.002561
+"Friction_Factor":0.02506
+"Pressure_Drop_kPa":200905156.08
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+26:{
+"NPS":"3/4"
+"NB":20
+"ID_mm":22.79
+"Area_m2":0.00040797621054999996
+"Velocity_mps":1858.77
+"Reynolds_No":14666021
+"Relative_Roughness":0.001975
+"Friction_Factor":0.02336
+"Pressure_Drop_kPa":51063394.86
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+27:{
+"NPS":"1"
+"NB":25
+"ID_mm":28.849999999999998
+"Area_m2":0.0006537893237499999
+"Velocity_mps":1159.9
+"Reynolds_No":11585394
+"Relative_Roughness":0.00156
+"Friction_Factor":0.02198
+"Pressure_Drop_kPa":14789520.84
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+28:{
+"NPS":"1-1/4"
+"NB":32
+"ID_mm":37.35
+"Area_m2":0.0010957901737500002
+"Velocity_mps":692.04
+"Reynolds_No":8948825
+"Relative_Roughness":0.001205
+"Friction_Factor":0.02061
+"Pressure_Drop_kPa":3817375.72
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+29:{
+"NPS":"1-1/2"
+"NB":40
+"ID_mm":43.22
+"Area_m2":0.0014672891782
+"Velocity_mps":516.83
+"Reynolds_No":7733425
+"Relative_Roughness":0.001041
+"Friction_Factor":0.01989
+"Pressure_Drop_kPa":1777577.84
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+30:{
+"NPS":"2"
+"NB":50
+"ID_mm":54.76
+"Area_m2":0.0023554455447999997
+"Velocity_mps":321.95
+"Reynolds_No":6103700
+"Relative_Roughness":0.000822
+"Friction_Factor":0.01882
+"Pressure_Drop_kPa":515927.18
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+31:{
+"NPS":"2-1/2"
+"NB":65
+"ID_mm":65.99
+"Area_m2":0.0034206012185499994
+"Velocity_mps":221.7
+"Reynolds_No":5064989
+"Relative_Roughness":0.000682
+"Friction_Factor":0.01804
+"Pressure_Drop_kPa":194975.88
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+32:{
+"NPS":"3"
+"NB":80
+"ID_mm":81.28
+"Area_m2":0.0051893573632
+"Velocity_mps":146.13
+"Reynolds_No":4112188
+"Relative_Roughness":0.000554
+"Friction_Factor":0.01725
+"Pressure_Drop_kPa":65900.64
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+33:{
+"NPS":"4"
+"NB":100
+"ID_mm":105.74
+"Area_m2":0.008782634339799998
+"Velocity_mps":86.34
+"Reynolds_No":3160948
+"Relative_Roughness":0.000426
+"Friction_Factor":0.01636
+"Pressure_Drop_kPa":16826.65
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+34:{
+"NPS":"5"
+"NB":125
+"ID_mm":131.77
+"Area_m2":0.013638897992950002
+"Velocity_mps":55.6
+"Reynolds_No":2536530
+"Relative_Roughness":0.000342
+"Friction_Factor":0.0157
+"Pressure_Drop_kPa":5394.37
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+35:{
+"NPS":"6"
+"NB":150
+"ID_mm":157.33
+"Area_m2":0.019443268550950004
+"Velocity_mps":39
+"Reynolds_No":2124443
+"Relative_Roughness":0.000286
+"Friction_Factor":0.01523
+"Pressure_Drop_kPa":2165.21
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+36:{
+"NPS":"8"
+"NB":200
+"ID_mm":206.4
+"Area_m2":0.03346305408
+"Velocity_mps":22.66
+"Reynolds_No":1619373
+"Relative_Roughness":0.000218
+"Friction_Factor":0.01464
+"Pressure_Drop_kPa":539.28
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+37:{
+"NPS":"10"
+"NB":250
+"ID_mm":257.91
+"Area_m2":0.05224954974255001
+"Velocity_mps":14.51
+"Reynolds_No":1295951
+"Relative_Roughness":0.000174
+"Friction_Factor":0.01427
+"Pressure_Drop_kPa":173.83
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+38:{
+"NPS":"12"
+"NB":300
+"ID_mm":306.41999999999996
+"Area_m2":0.07375312148219998
+"Velocity_mps":10.28
+"Reynolds_No":1090786
+"Relative_Roughness":0.000147
+"Friction_Factor":0.01407
+"Pressure_Drop_kPa":72.87
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+39:{
+"NPS":"14"
+"NB":350
+"ID_mm":336.55
+"Area_m2":0.08897036641375
+"Velocity_mps":8.52
+"Reynolds_No":993132
+"Relative_Roughness":0.000134
+"Friction_Factor":0.01398
+"Pressure_Drop_kPa":45.52
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+40:{
+"NPS":"16"
+"NB":400
+"ID_mm":384.96
+"Area_m2":0.11640654535679999
+"Velocity_mps":6.51
+"Reynolds_No":868242
+"Relative_Roughness":0.000117
+"Friction_Factor":0.01391
+"Pressure_Drop_kPa":23.27
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+41:{
+"NPS":"18"
+"NB":450
+"ID_mm":433.17
+"Area_m2":0.14738827351095002
+"Velocity_mps":5.15
+"Reynolds_No":771611
+"Relative_Roughness":0.000104
+"Friction_Factor":0.01388
+"Pressure_Drop_kPa":12.96
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+42:{
+"NPS":"20"
+"NB":500
+"ID_mm":481.81
+"Area_m2":0.18234665817655
+"Velocity_mps":4.16
+"Reynolds_No":693715
+"Relative_Roughness":0.000093
+"Friction_Factor":0.01388
+"Pressure_Drop_kPa":7.67
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+43:{
+"NPS":"24"
+"NB":600
+"ID_mm":578.64
+"Area_m2":0.2630044480608
+"Velocity_mps":2.88
+"Reynolds_No":577628
+"Relative_Roughness":0.000078
+"Friction_Factor":0.01395
+"Pressure_Drop_kPa":3.13
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+]
+"mass_flow":4.35823754789272
+"volumetric_flow":0.7583333333333333
+"equivalent_length":{
+"Straight_Length_m":5000
+"Equivalent_Fittings_Length_m":425.879
+"Total_Equivalent_Length_m":5425.879
+"Fitting_Details":[
+0:{
+"Fitting_Code":"ELBOW_90_LR"
+"Description":"90° Long Radius Elbow"
+"Quantity":8
+"Le_over_D":30
+"Equivalent_Length_m":138.874
+}
+1:{
+"Fitting_Code":"TEE_THROUGH"
+"Description":"Tee Through"
+"Quantity":2
+"Le_over_D":20
+"Equivalent_Length_m":23.146
+}
+2:{
+"Fitting_Code":"GATE_VALVE"
+"Description":"Gate Valve"
+"Quantity":2
+"Le_over_D":8
+"Equivalent_Length_m":9.258
+}
+3:{
+"Fitting_Code":"GLOBE_VALVE"
+"Description":"Globe Valve"
+"Quantity":1
+"Le_over_D":340
+"Equivalent_Length_m":196.738
+}
+4:{
+"Fitting_Code":"Y_STRAINER"
+"Description":"Y Strainer"
+"Quantity":1
+"Le_over_D":100
+"Equivalent_Length_m":57.864
+}
+]
+}
+}
+
+Output - 5.
+
+
+
+app
+
+Project
+
+Engineering
+
+BOQ
+
+Costing
+
+Export
+
+About
+
+⚙️ ENGINEERING
+Project:
+
+Client:
+
+Prepared By:
+
+Revision: 0
+
+
+Steam
+
+
+Condensate
+
+
+Distribution Network
+
+
+Design Summary
+
+Steam
+Steam Requirement Method
+
+
+Product Heating
+
+
+Heat Load (Coming Soon)
+
+
+Direct Steam Injection (Coming Soon)
+
+
+Heat Exchanger (Coming Soon)
+
+
+Sterilization (Coming Soon)
+
+Product Data
+Product Mass (kg)
+
+50000.00
+
+
+Specific Heat (kJ/kg°C)
+
+4.19
+
+
+Initial Temperature (°C)
+
+25.00
+
+
+Final Temperature (°C)
+
+100.00
+
+
+Heating Time (minutes)
+
+30.00
+
+
+Steam Conditions
+Steam Type: Saturated Steam
+
+Steam Pressure (barg)
+
+1.00
+
+
+Distribution System
+Steam Pipe Length (m)
+
+5000.00
+
+
+Pressure drop is currently calculated considering only the straight pipe length. Fittings and valves will be included in a future version.
+
+
+Equivalent Length Details
+{
+"Straight_Length_m":5000
+"Equivalent_Fittings_Length_m":425.879
+"Total_Equivalent_Length_m":5425.879
+"Fitting_Details":[
+0:{
+"Fitting_Code":"ELBOW_90_LR"
+"Description":"90° Long Radius Elbow"
+"Quantity":8
+"Le_over_D":30
+"Equivalent_Length_m":138.874
+}
+1:{
+"Fitting_Code":"TEE_THROUGH"
+"Description":"Tee Through"
+"Quantity":2
+"Le_over_D":20
+"Equivalent_Length_m":23.146
+}
+2:{
+"Fitting_Code":"GATE_VALVE"
+"Description":"Gate Valve"
+"Quantity":2
+"Le_over_D":8
+"Equivalent_Length_m":9.258
+}
+3:{
+"Fitting_Code":"GLOBE_VALVE"
+"Description":"Globe Valve"
+"Quantity":1
+"Le_over_D":340
+"Equivalent_Length_m":196.738
+}
+4:{
+"Fitting_Code":"Y_STRAINER"
+"Description":"Y Strainer"
+"Quantity":1
+"Le_over_D":100
+"Equivalent_Length_m":57.864
+}
+]
+}
+{
+"selected_pipe":{
+"NPS":"16"
+"NB":400
+"OD_mm":406.4
+"Thickness_mm":12.7
+"ID_mm":393.7
+"Internal_Flow_Area_m2":0.12175225649499999
+"Schedule":40
+"Pipe_Series":"ASME B36.10M"
+"Material":"CS"
+"Absolute_Roughness_mm":0.045
+"Weight_kg_per_m":123.3
+"Paint_Area_m2_per_m":NaN
+"Insulation_OD_mm":NaN
+"Max_Pressure_barg":NaN
+"Max_Temperature_C":NaN
+"Rate_Rs_per_m":NaN
+"Velocity_mps":28.79
+"Reynolds_Number":1016386
+"Relative_Roughness":0.0001143002286004572
+"Friction_Factor":0.013696299054753176
+"Pressure_Drop_kPa":86.16176980337279
+"Pressure_Drop_bar":0.8616176980337279
+"Acceptable":true
+"Velocity_Check":true
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Check":true
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+"evaluation_history":[
+0:{
+"NPS":"1/8"
+"NB":6
+"ID_mm":8.57
+"Area_m2":0.00005769096895
+"Velocity_mps":60754.17
+"Reynolds_No":46692069
+"Relative_Roughness":0.005251
+"Friction_Factor":0.03083
+"Pressure_Drop_kPa":37553631877.2
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+1:{
+"NPS":"1/4"
+"NB":8
+"ID_mm":11.459999999999999
+"Area_m2":0.00010316097179999998
+"Velocity_mps":33975.71
+"Reynolds_No":34917193
+"Relative_Roughness":0.003927
+"Friction_Factor":0.02827
+"Pressure_Drop_kPa":8057494997.14
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+2:{
+"NPS":"3/8"
+"NB":10
+"ID_mm":14.790000000000001
+"Area_m2":0.00017182349055
+"Velocity_mps":20398.65
+"Reynolds_No":27055512
+"Relative_Roughness":0.003043
+"Friction_Factor":0.02628
+"Pressure_Drop_kPa":2093109879.48
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+3:{
+"NPS":"1/2"
+"NB":15
+"ID_mm":18.53
+"Area_m2":0.00026970998695000005
+"Velocity_mps":12995.32
+"Reynolds_No":21594767
+"Relative_Roughness":0.002428
+"Friction_Factor":0.02469
+"Pressure_Drop_kPa":637442985.64
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+4:{
+"NPS":"3/4"
+"NB":20
+"ID_mm":23.83
+"Area_m2":0.00044606102094999996
+"Velocity_mps":7857.6
+"Reynolds_No":16791902
+"Relative_Roughness":0.001888
+"Friction_Factor":0.02309
+"Pressure_Drop_kPa":169577308.04
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+5:{
+"NPS":"1"
+"NB":25
+"ID_mm":30.02
+"Area_m2":0.0007078929142
+"Velocity_mps":4951.27
+"Reynolds_No":13329481
+"Relative_Roughness":0.001499
+"Friction_Factor":0.02175
+"Pressure_Drop_kPa":50404328.71
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+6:{
+"NPS":"1-1/4"
+"NB":32
+"ID_mm":38.64
+"Area_m2":0.0011727904608
+"Velocity_mps":2988.57
+"Reynolds_No":10355875
+"Relative_Roughness":0.001165
+"Friction_Factor":0.02043
+"Pressure_Drop_kPa":13415329.83
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+7:{
+"NPS":"1-1/2"
+"NB":40
+"ID_mm":44.62
+"Area_m2":0.0015638868261999997
+"Velocity_mps":2241.19
+"Reynolds_No":8967975
+"Relative_Roughness":0.001009
+"Friction_Factor":0.01973
+"Pressure_Drop_kPa":6315844.92
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+8:{
+"NPS":"2"
+"NB":50
+"ID_mm":56.39
+"Area_m2":0.00249775811455
+"Velocity_mps":1403.25
+"Reynolds_No":7096135
+"Relative_Roughness":0.000798
+"Friction_Factor":0.01868
+"Pressure_Drop_kPa":1857871.13
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+9:{
+"NPS":"2-1/2"
+"NB":65
+"ID_mm":67.84
+"Area_m2":0.0036150796288
+"Velocity_mps":969.54
+"Reynolds_No":5898453
+"Relative_Roughness":0.000663
+"Friction_Factor":0.01792
+"Pressure_Drop_kPa":708307.62
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+10:{
+"NPS":"3"
+"NB":80
+"ID_mm":83.41000000000001
+"Area_m2":0.005464902672550002
+"Velocity_mps":641.36
+"Reynolds_No":4797399
+"Relative_Roughness":0.00054
+"Friction_Factor":0.01713
+"Pressure_Drop_kPa":241608.79
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+11:{
+"NPS":"4"
+"NB":100
+"ID_mm":108.28
+"Area_m2":0.009209640623199998
+"Velocity_mps":380.58
+"Reynolds_No":3695521
+"Relative_Roughness":0.000416
+"Friction_Factor":0.01624
+"Pressure_Drop_kPa":62355.89
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+12:{
+"NPS":"5"
+"NB":125
+"ID_mm":134.75
+"Area_m2":0.014262765343749999
+"Velocity_mps":245.74
+"Reynolds_No":2969581
+"Relative_Roughness":0.000334
+"Friction_Factor":0.01559
+"Pressure_Drop_kPa":20122.23
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+13:{
+"NPS":"6"
+"NB":150
+"ID_mm":161.19
+"Area_m2":0.02040903074655
+"Velocity_mps":171.74
+"Reynolds_No":2482480
+"Relative_Roughness":0.000279
+"Friction_Factor":0.01511
+"Pressure_Drop_kPa":7994.17
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+14:{
+"NPS":"8"
+"NB":200
+"ID_mm":210.92
+"Area_m2":0.03494473204719999
+"Velocity_mps":100.3
+"Reynolds_No":1897170
+"Relative_Roughness":0.000213
+"Friction_Factor":0.0145
+"Pressure_Drop_kPa":2014.8
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+15:{
+"NPS":"10"
+"NB":250
+"ID_mm":263.73
+"Area_m2":0.05463428438295
+"Velocity_mps":64.15
+"Reynolds_No":1517275
+"Relative_Roughness":0.000171
+"Friction_Factor":0.01411
+"Pressure_Drop_kPa":646.28
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+16:{
+"NPS":"12"
+"NB":300
+"ID_mm":313.59
+"Area_m2":0.07724503950254999
+"Velocity_mps":45.37
+"Reynolds_No":1276032
+"Relative_Roughness":0.000143
+"Friction_Factor":0.01389
+"Pressure_Drop_kPa":269.42
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+17:{
+"NPS":"14"
+"NB":350
+"ID_mm":344.47
+"Area_m2":0.09320710079695001
+"Velocity_mps":37.6
+"Reynolds_No":1161643
+"Relative_Roughness":0.000131
+"Friction_Factor":0.01379
+"Pressure_Drop_kPa":168.05
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+18:{
+"NPS":"16"
+"NB":400
+"ID_mm":393.7
+"Area_m2":0.12175225649499999
+"Velocity_mps":28.79
+"Reynolds_No":1016386
+"Relative_Roughness":0.000114
+"Friction_Factor":0.0137
+"Pressure_Drop_kPa":86.16
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+19:{
+"NPS":"18"
+"NB":450
+"ID_mm":442.73
+"Area_m2":0.15396573945294997
+"Velocity_mps":22.76
+"Reynolds_No":903826
+"Relative_Roughness":0.000102
+"Friction_Factor":0.01365
+"Pressure_Drop_kPa":48.07
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+20:{
+"NPS":"20"
+"NB":500
+"ID_mm":492.91
+"Area_m2":0.19084529059255
+"Velocity_mps":18.37
+"Reynolds_No":811814
+"Relative_Roughness":0.000091
+"Friction_Factor":0.01363
+"Pressure_Drop_kPa":28.27
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+21:{
+"NPS":"24"
+"NB":600
+"ID_mm":592.12
+"Area_m2":0.2754010871512
+"Velocity_mps":12.73
+"Reynolds_No":675794
+"Relative_Roughness":0.000076
+"Friction_Factor":0.01368
+"Pressure_Drop_kPa":11.49
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+22:{
+"NPS":"1/8"
+"NB":6
+"ID_mm":7.890000000000001
+"Area_m2":0.00004889902455000001
+"Velocity_mps":71677.65
+"Reynolds_No":50716227
+"Relative_Roughness":0.005703
+"Friction_Factor":0.03162
+"Pressure_Drop_kPa":58228862228.54
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+23:{
+"NPS":"1/4"
+"NB":8
+"ID_mm":10.68
+"Area_m2":0.00008959601519999999
+"Velocity_mps":39119.68
+"Reynolds_No":37467325
+"Relative_Roughness":0.004213
+"Friction_Factor":0.02886
+"Pressure_Drop_kPa":11700133524.74
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+24:{
+"NPS":"3/8"
+"NB":10
+"ID_mm":13.900000000000002
+"Area_m2":0.00015176645500000004
+"Velocity_mps":23094.48
+"Reynolds_No":28787844
+"Relative_Roughness":0.003237
+"Friction_Factor":0.02674
+"Pressure_Drop_kPa":2904733697.57
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+25:{
+"NPS":"1/2"
+"NB":15
+"ID_mm":17.57
+"Area_m2":0.00024248769895
+"Velocity_mps":14454.21
+"Reynolds_No":22774674
+"Relative_Roughness":0.002561
+"Friction_Factor":0.02505
+"Pressure_Drop_kPa":843729307.9
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+26:{
+"NPS":"3/4"
+"NB":20
+"ID_mm":22.79
+"Area_m2":0.00040797621054999996
+"Velocity_mps":8591.11
+"Reynolds_No":17558185
+"Relative_Roughness":0.001975
+"Friction_Factor":0.02336
+"Pressure_Drop_kPa":214435963.96
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+27:{
+"NPS":"1"
+"NB":25
+"ID_mm":28.849999999999998
+"Area_m2":0.0006537893237499999
+"Velocity_mps":5361
+"Reynolds_No":13870053
+"Relative_Roughness":0.00156
+"Friction_Factor":0.02197
+"Pressure_Drop_kPa":62102379.56
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+28:{
+"NPS":"1-1/4"
+"NB":32
+"ID_mm":37.35
+"Area_m2":0.0010957901737500002
+"Velocity_mps":3198.58
+"Reynolds_No":10713548
+"Relative_Roughness":0.001205
+"Friction_Factor":0.0206
+"Pressure_Drop_kPa":16027351.95
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+29:{
+"NPS":"1-1/2"
+"NB":40
+"ID_mm":43.22
+"Area_m2":0.0014672891782
+"Velocity_mps":2388.74
+"Reynolds_No":9258469
+"Relative_Roughness":0.001041
+"Friction_Factor":0.01988
+"Pressure_Drop_kPa":7462418.7
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+30:{
+"NPS":"2"
+"NB":50
+"ID_mm":54.76
+"Area_m2":0.0023554455447999997
+"Velocity_mps":1488.03
+"Reynolds_No":7307360
+"Relative_Roughness":0.000822
+"Friction_Factor":0.01881
+"Pressure_Drop_kPa":2165385.03
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+31:{
+"NPS":"2-1/2"
+"NB":65
+"ID_mm":65.99
+"Area_m2":0.0034206012185499994
+"Velocity_mps":1024.66
+"Reynolds_No":6063813
+"Relative_Roughness":0.000682
+"Friction_Factor":0.01803
+"Pressure_Drop_kPa":818105.91
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+32:{
+"NPS":"3"
+"NB":80
+"ID_mm":81.28
+"Area_m2":0.0051893573632
+"Velocity_mps":675.41
+"Reynolds_No":4923118
+"Relative_Roughness":0.000554
+"Friction_Factor":0.01723
+"Pressure_Drop_kPa":276397.19
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+33:{
+"NPS":"4"
+"NB":100
+"ID_mm":105.74
+"Area_m2":0.008782634339799998
+"Velocity_mps":399.08
+"Reynolds_No":3784292
+"Relative_Roughness":0.000426
+"Friction_Factor":0.01632
+"Pressure_Drop_kPa":70517.43
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+34:{
+"NPS":"5"
+"NB":125
+"ID_mm":131.77
+"Area_m2":0.013638897992950002
+"Velocity_mps":256.98
+"Reynolds_No":3036738
+"Relative_Roughness":0.000342
+"Friction_Factor":0.01565
+"Pressure_Drop_kPa":22584.88
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+35:{
+"NPS":"6"
+"NB":150
+"ID_mm":157.33
+"Area_m2":0.019443268550950004
+"Velocity_mps":180.27
+"Reynolds_No":2543387
+"Relative_Roughness":0.000286
+"Friction_Factor":0.01517
+"Pressure_Drop_kPa":9055.68
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+36:{
+"NPS":"8"
+"NB":200
+"ID_mm":206.4
+"Area_m2":0.03346305408
+"Velocity_mps":104.74
+"Reynolds_No":1938716
+"Relative_Roughness":0.000218
+"Friction_Factor":0.01455
+"Pressure_Drop_kPa":2250.56
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+37:{
+"NPS":"10"
+"NB":250
+"ID_mm":257.91
+"Area_m2":0.05224954974255001
+"Velocity_mps":67.08
+"Reynolds_No":1551514
+"Relative_Roughness":0.000174
+"Friction_Factor":0.01415
+"Pressure_Drop_kPa":723.72
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+38:{
+"NPS":"12"
+"NB":300
+"ID_mm":306.41999999999996
+"Area_m2":0.07375312148219998
+"Velocity_mps":47.52
+"Reynolds_No":1305891
+"Relative_Roughness":0.000147
+"Friction_Factor":0.01391
+"Pressure_Drop_kPa":302.72
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+39:{
+"NPS":"14"
+"NB":350
+"ID_mm":336.55
+"Area_m2":0.08897036641375
+"Velocity_mps":39.39
+"Reynolds_No":1188979
+"Relative_Roughness":0.000134
+"Friction_Factor":0.01381
+"Pressure_Drop_kPa":188.85
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Exceeds Allowable Limit"
+"Overall_Status":"Not Acceptable"
+}
+40:{
+"NPS":"16"
+"NB":400
+"ID_mm":384.96
+"Area_m2":0.11640654535679999
+"Velocity_mps":30.11
+"Reynolds_No":1039461
+"Relative_Roughness":0.000117
+"Friction_Factor":0.01371
+"Pressure_Drop_kPa":96.37
+"Velocity_Status":"Too High"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+41:{
+"NPS":"18"
+"NB":450
+"ID_mm":433.17
+"Area_m2":0.14738827351095002
+"Velocity_mps":23.78
+"Reynolds_No":923774
+"Relative_Roughness":0.000104
+"Friction_Factor":0.01365
+"Pressure_Drop_kPa":53.57
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+42:{
+"NPS":"20"
+"NB":500
+"ID_mm":481.81
+"Area_m2":0.18234665817655
+"Velocity_mps":19.22
+"Reynolds_No":830516
+"Relative_Roughness":0.000093
+"Friction_Factor":0.01364
+"Pressure_Drop_kPa":31.63
+"Velocity_Status":"Acceptable"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Within Allowable Limit"
+}
+43:{
+"NPS":"24"
+"NB":600
+"ID_mm":578.64
+"Area_m2":0.2630044480608
+"Velocity_mps":13.33
+"Reynolds_No":691537
+"Relative_Roughness":0.000078
+"Friction_Factor":0.01367
+"Pressure_Drop_kPa":12.86
+"Velocity_Status":"Too Low"
+"Pressure_Drop_Status":"Acceptable"
+"Overall_Status":"Not Acceptable"
+}
+]
+"mass_flow":3.960414774447472
+"volumetric_flow":3.5049670753860127
+"equivalent_length":{
+"Straight_Length_m":5000
+"Equivalent_Fittings_Length_m":425.879
+"Total_Equivalent_Length_m":5425.879
+"Fitting_Details":[
+0:{
+"Fitting_Code":"ELBOW_90_LR"
+"Description":"90° Long Radius Elbow"
+"Quantity":8
+"Le_over_D":30
+"Equivalent_Length_m":138.874
+}
+1:{
+"Fitting_Code":"TEE_THROUGH"
+"Description":"Tee Through"
+"Quantity":2
+"Le_over_D":20
+"Equivalent_Length_m":23.146
+}
+2:{
+"Fitting_Code":"GATE_VALVE"
+"Description":"Gate Valve"
+"Quantity":2
+"Le_over_D":8
+"Equivalent_Length_m":9.258
+}
+3:{
+"Fitting_Code":"GLOBE_VALVE"
+"Description":"Globe Valve"
+"Quantity":1
+"Le_over_D":340
+"Equivalent_Length_m":196.738
+}
+4:{
+"Fitting_Code":"Y_STRAINER"
+"Description":"Y Strainer"
+"Quantity":1
+"Le_over_D":100
+"Equivalent_Length_m":57.864
+}
+]
+}
+}
+
+Output - 6.
+
+
+
+The pressure drop is increasing as expected with increase in pipe length 50 ---  100  ------  200  ------  400  
+
+Output - 7.
+
+We are not yet taking input for fittings yet on steam form...we need to integrate.
+
+Output-8.
+
+
+Test-9 unable to understand how to do.
+
+Test 10 - out put is correct as expected.
+
+
+
