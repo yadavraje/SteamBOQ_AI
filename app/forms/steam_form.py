@@ -157,14 +157,14 @@ def steam_form():
         
         
         st.subheader("Equivalent Length Details")
-        """st.write(st.session_state.equivalent_length)"""
+        st.write(st.session_state.equivalent_length)
 
     # Display Engineering Results
     if st.session_state.get("heat_required") is not None:
 
         """table_data = build_steam_results(st.session_state)
-        engineering_table(table_data)
-        st.write(pipe_selection)"""
+        engineering_table(table_data)"""
+        st.write(pipe_selection)
         report = build_steam_results(st.session_state,
                                      pipe_selection, condensate_pipe_selection)
         
