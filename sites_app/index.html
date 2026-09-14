@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102c3d" />
+    <meta name="description" content="SteamBOQ proposal estimator for preliminary steam demand, pipe sizing, BOQ costing, and scenario comparison." />
+    <title>SteamBOQ · Proposal Estimator</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 36" role="img">
+              <path d="M9 25c0-5 4-6 4-11 0-2-1-4-2-6 5 3 7 6 6 10 3-3 3-6 2-9 6 5 9 10 7 16-2 5-7 8-12 7-3-1-5-3-5-7Z" />
+              <path class="mark-line" d="M6 27h24" />
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">SteamBOQ</div>
+            <div class="brand-sub">Proposal Estimator · Public Beta v8</div>
+          </div>
+        </div>
+        <div class="top-actions no-print">
+          <span class="privacy-pill"><span></span> Free public edition</span>
+          <button class="button ghost account-trigger" id="accountBtn" type="button">My account</button>
+          <button class="button ghost rate-desk-trigger" id="rateDeskBtn" type="button">Rate Desk</button>
+          <button class="button ghost" id="feedbackBtn" type="button">Feedback</button>
+          <button class="button ghost" id="exportCsvBtn" type="button">Export BOQ</button>
+          <button class="button primary" id="printBtn" type="button">Print proposal</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="input-panel no-print" aria-label="Estimator inputs">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Project basis</p>
+              <h1>Build your estimate</h1>
+            </div>
+            <span class="step-badge">BETA</span>
+          </div>
+
+          <div class="input-scroll">
+            <details open>
+              <summary>Proposal details</summary>
+              <div class="field-grid two">
+                <label class="field full"><span>Project name</span><input id="projectName" value="Sterilization Utility Upgrade" /></label>
+                <label class="field full"><span>Client</span><input id="clientName" value="Client under review" /></label>
+                <label class="field"><span>Prepared by</span><input id="preparedBy" value="Rajesh Yadav" /></label>
+                <label class="field"><span>Revision</span><input id="revision" value="R0" /></label>
+              </div>
+            </details>
+
+            <details open>
+              <summary>Process duty</summary>
+              <div class="segmented" role="group" aria-label="Calculation method">
+                <button class="segment active" data-method="product" type="button">Product heating</button>
+                <button class="segment" data-method="direct" type="button">Direct heat load</button>
+              </div>
+              <input id="method" type="hidden" value="product" />
+              <div id="productFields" class="field-grid two">
+                <label class="field"><span>Product mass <b>kg</b></span><input id="productMass" type="number" min="0" step="10" value="500" /></label>
+                <label class="field"><span>Specific heat <b>kJ/kg·°C</b></span><input id="specificHeat" type="number" min="0" step="0.1" value="3.8" /></label>
+                <label class="field"><span>Initial temp. <b>°C</b></span><input id="initialTemp" type="number" step="1" value="30" /></label>
+                <label class="field"><span>Final temp. <b>°C</b></span><input id="finalTemp" type="number" step="1" value="121" /></label>
+                <label class="field full"><span>Heating time <b>hr</b></span><input id="heatingTime" type="number" min="0.05" step="0.1" value="1" /></label>
+              </div>
+              <div id="directFields" class="field-grid hidden">
+                <label class="field full"><span>Useful heat load <b>kJ/hr</b></span><input id="directHeatLoad" type="number" min="0" step="1000" value="180000" /></label>
+              </div>
+              <div class="field-grid two">
+                <label class="field"><span>Thermal efficiency <b>%</b></span><input id="efficiency" type="number" min="1" max="100" step="1" value="85" /></label>
+                <label class="field"><span>Design margin <b>%</b></span><input id="designMargin" type="number" min="0" max="100" step="1" value="10" /></label>
+                <label class="field full"><span>Minimum steam/product approach <b>°C</b></span><input id="minimumApproach" type="number" min="1" max="30" step="1" value="5" /></label>
+              </div>
+            </details>
+
+            <details open>
+              <summary>Steam & routing</summary>
+              <div class="field-grid two">
+                <label class="field"><span>Steam pressure <b>barg</b></span><input id="steamPressure" type="number" min="0.1" max="12" step="0.5" value="3" /></label>
+                <label class="field"><span>Target velocity <b>m/s</b></span><input id="targetVelocity" type="number" min="10" max="40" step="1" value="25" /></label>
+                <label class="field"><span>Route length <b>m</b></span><input id="routeLength" type="number" min="1" step="1" value="80" /></label>
+                <label class="field"><span>Allowable pressure drop <b>bar</b></span><input id="allowablePressureDrop" type="number" min="0.01" max="2" step="0.05" value="0.8" /></label>
+              </div>
+              <div class="field-grid three compact-fields">
+                <label class="field"><span>Steam elbows</span><input id="elbows" type="number" min="0" step="1" value="10" /></label>
+                <label class="field"><span>Steam tees</span><input id="tees" type="number" min="0" step="1" value="2" /></label>
+                <label class="field"><span>Steam reducers</span><input id="reducers" type="number" min="0" step="1" value="2" /></label>
+                <label class="field"><span>Steam isolations</span><input id="isolationValves" type="number" min="0" step="1" value="4" /></label>
+                <label class="field"><span>PRV stations</span><input id="prvStations" type="number" min="0" step="1" value="1" /></label>
+                <label class="field"><span>Trap stations</span><input id="trapStations" type="number" min="0" step="1" value="1" /></label>
+              </div>
+            </details>
+
+            <details open>
+              <summary>Condensate & BOQ</summary>
+              <div class="field-grid two">
+                <label class="field"><span>Receiver pressure <b>barg</b></span><input id="condensateReceiverPressure" type="number" min="0" max="11.9" step="0.1" value="0" /></label>
+                <label class="field"><span>Condensate route <b>m</b></span><input id="condensateRouteLength" type="number" min="1" step="1" value="52" /></label>
+                <label class="field full"><span>BOQ contingency <b>%</b></span><input id="contingency" type="number" min="0" max="30" step="1" value="5" /></label>
+              </div>
+              <div class="field-grid three compact-fields">
+                <label class="field"><span>Cond. elbows</span><input id="condElbows" type="number" min="0" step="1" value="8" /></label>
+                <label class="field"><span>Cond. tees</span><input id="condTees" type="number" min="0" step="1" value="1" /></label>
+                <label class="field"><span>Cond. isolations</span><input id="condIsolationValves" type="number" min="0" step="1" value="2" /></label>
+              </div>
+              <p class="input-note">Receiver pressure controls flash steam. Enter actual condensate routing and fitting quantities; they are no longer inferred from the steam route.</p>
+            </details>
+          </div>
+
+          <button id="calculateBtn" class="button calculate" type="button">
+            <span>Calculate & build proposal</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+          </button>
+        </aside>
+
+        <section class="results" aria-live="polite">
+          <div class="proposal-header">
+            <div>
+              <p class="eyebrow">Preliminary technical-commercial proposal</p>
+              <h2 id="proposalTitle">Sterilization Utility Upgrade</h2>
+              <p class="proposal-meta"><span id="proposalClient">Client under review</span><i></i><span id="proposalRevision">Rev R0</span><i></i><span id="proposalDate"></span></p>
+            </div>
+            <div id="calcStatus" class="status okay"><span></span> Estimate ready</div>
+          </div>
+
+          <div class="rate-strip no-print">
+            <div class="rate-strip-main">
+              <div id="ratePulse" class="rate-pulse review"><span></span></div>
+              <div><strong id="rateStripTitle">Hybrid rate basis</strong><p id="rateStripMeta">Loading rate provenance…</p></div>
+            </div>
+            <div class="rate-strip-stats">
+              <span><b id="steelPulse">—</b> steel index</span>
+              <span><b id="coveragePulse">—</b> supplier coverage</span>
+              <span><b id="confidencePulse">—</b> confidence</span>
+            </div>
+            <button id="openRatesInline" class="button secondary" type="button">Inspect rates</button>
+          </div>
+
+          <div class="metric-grid">
+            <article class="metric hero-metric">
+              <div class="metric-icon steam" aria-hidden="true">S</div>
+              <div><span>Design steam demand</span><strong id="steamDemand">—</strong><small>kg/hr</small></div>
+              <em id="steamBasis">at 3.0 barg</em>
+            </article>
+            <article class="metric">
+              <span>Steam line</span><strong id="steamPipe">—</strong><small id="velocityResult">— m/s actual</small>
+            </article>
+            <article class="metric">
+              <span>Preliminary value</span><strong id="proposalValue">—</strong><small>excl. taxes</small>
+            </article>
+            <article class="metric">
+              <span>Pressure drop</span><strong id="pressureDrop">—</strong><small id="pressureCheck">preliminary check</small>
+            </article>
+          </div>
+
+          <div id="alertBox" class="alert hidden"></div>
+
+          <div class="content-grid">
+            <article class="card boq-card">
+              <div class="card-heading">
+                <div><p class="eyebrow">Priced schedule</p><h3>Preliminary bill of quantities</h3></div>
+                <span class="edit-hint no-print">Rates are editable</span>
+              </div>
+              <div class="table-wrap">
+                <table class="boq-table">
+                  <thead><tr><th>#</th><th>Description</th><th>Unit</th><th>Qty</th><th>Rate (₹)</th><th>Amount (₹)</th></tr></thead>
+                  <tbody id="boqBody"></tbody>
+                  <tfoot>
+                    <tr><td colspan="5">BOQ subtotal</td><td id="boqSubtotal">—</td></tr>
+                    <tr><td colspan="5">Contingency <span id="contingencyLabel">5%</span></td><td id="contingencyAmount">—</td></tr>
+                    <tr class="grand-total"><td colspan="5">Preliminary proposal value</td><td id="grandTotal">—</td></tr>
+                  </tfoot>
+                </table>
+              </div>
+              <p id="rateNote" class="table-note">Loading the current hybrid-rate basis. Freight, taxes, civil work, electrical work and statutory approvals are excluded.</p>
+            </article>
+
+            <aside class="side-stack">
+              <article class="card basis-card">
+                <div class="card-heading"><div><p class="eyebrow">Calculation trace</p><h3>Engineering basis</h3></div></div>
+                <dl id="engineeringBasis" class="basis-list"></dl>
+                <div id="assumptionChips" class="chip-row"></div>
+              </article>
+
+              <article class="card scenario-card no-print">
+                <div class="card-heading">
+                  <div><p class="eyebrow">Decision workspace</p><h3>Compare scenarios</h3></div>
+                  <span id="scenarioCount" class="count-badge">0 saved</span>
+                </div>
+                <div class="scenario-save">
+                  <input id="scenarioName" aria-label="Scenario name" value="Base case" />
+                  <button id="saveScenarioBtn" class="button secondary" type="button">Save current</button>
+                </div>
+                <p id="cloudSaveHint" class="account-note">New scenarios are saved locally and to your free account after sign-in.</p>
+                <div id="scenarioList" class="scenario-list">
+                  <div class="empty-state">Save the base case, change an input, then save another case to compare.</div>
+                </div>
+              </article>
+            </aside>
+          </div>
+
+          <article id="comparisonCard" class="card comparison-card no-print hidden">
+            <div class="card-heading"><div><p class="eyebrow">Side-by-side review</p><h3>Scenario comparison</h3></div></div>
+            <div class="table-wrap"><table class="comparison-table"><thead id="comparisonHead"></thead><tbody id="comparisonBody"></tbody></table></div>
+          </article>
+
+          <article class="feedback-callout no-print">
+            <div class="feedback-callout-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 5h14v10H9l-4 4V5Z"/><path d="M9 9h6M9 12h4"/></svg>
+            </div>
+            <div><p class="eyebrow">Built with users</p><h3>Help improve the next estimate</h3><span>Report a calculation concern, suggest a feature, or tell us what slowed you down.</span></div>
+            <div class="feedback-callout-rating"><span>How was this estimate?</span><div id="quickRating" class="quick-rating" aria-label="Quick experience rating"></div></div>
+            <button id="openFeedbackInline" class="button secondary" type="button">Share feedback</button>
+          </article>
+
+          <footer class="proposal-footer">
+            <p><strong>Controlled user-testing estimate only.</strong> Saturated-steam properties use IAPWS-IF97 benchmark nodes. Final design still requires approved P&amp;ID/line list, vendor data, code checks, trap/PRV selection, stress review and site routing confirmation.</p>
+            <p>Prepared by <span id="preparedByFooter">Rajesh Yadav</span> · SteamBOQ v8<br><button class="footer-link" data-legal="terms" type="button">Terms</button> · <button class="footer-link" data-legal="privacy" type="button">Privacy</button></p>
+          </footer>
+        </section>
+      </main>
+
+      <div id="accountOverlay" class="drawer-overlay hidden no-print" role="presentation">
+        <aside class="rate-drawer account-drawer" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+          <div class="drawer-header account-header">
+            <div><p class="eyebrow">Free public access</p><h2 id="accountTitle">My account</h2><span id="accountHeaderStatus">Checking account…</span></div>
+            <button id="closeAccount" class="drawer-close" type="button" aria-label="Close account">×</button>
+          </div>
+
+          <div class="commercial-notice ready" role="status">SteamBOQ is free during public testing. There is no subscription, checkout, payment mandate, or GST invoice.</div>
+
+          <section class="drawer-section account-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Identity</p><h3>Your workspace</h3></div><span class="count-badge">Free</span></div>
+            <p class="section-copy">ChatGPT sign-in acts as registration and keeps saved projects private to your account.</p>
+            <div id="signedInPanel" class="signed-in-panel">
+              <div class="account-avatar" aria-hidden="true">SB</div>
+              <div><strong id="signedInName">SteamBOQ user</strong><span id="signedInEmail"></span></div>
+              <div class="account-session-actions"><a class="button secondary" href="/signout-with-chatgpt?return_to=%2F" target="_top">Sign out</a></div>
+            </div>
+            <div id="accountStatus" class="form-status hidden" role="status"></div>
+          </section>
+
+          <section class="drawer-section account-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Free edition</p><h3>What is included</h3></div><span id="accountProjectLimit" class="manual-pill">25 cloud projects</span></div>
+            <ul>
+              <li>Steam-demand, pipe-sizing and preliminary BOQ calculations.</li>
+              <li>Scenario comparison plus browser and account project saves.</li>
+              <li>Rate source, date, coverage and confidence traceability.</li>
+              <li>Private calculation history and feedback linked to your account.</li>
+            </ul>
+          </section>
+
+          <section id="cloudProjectsSection" class="drawer-section account-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Cloud projects</p><h3>Saved to your account</h3></div><span id="cloudProjectCount" class="count-badge">0</span></div>
+            <div id="cloudProjectList" class="cloud-project-list"></div>
+          </section>
+
+          <section id="accountHistorySection" class="drawer-section account-section">
+            <div class="drawer-section-heading history-heading">
+              <div><p class="eyebrow">Previous records</p><h3>Calculation history</h3></div>
+              <div class="history-heading-actions"><span id="historyLimit" class="manual-pill">Latest 50</span><button id="clearHistoryBtn" class="button secondary compact" type="button" disabled>Clear history</button></div>
+            </div>
+            <p class="section-copy">A record is created only when you press Calculate or save a scenario. Opening a record does not modify the original.</p>
+            <div id="historyStatus" class="form-status hidden" role="status"></div>
+            <div class="history-summary"><span id="historyCount" class="count-badge">0</span><span>records stored privately in this account</span></div>
+            <div id="historyList" class="history-list"></div>
+          </section>
+
+          <section class="drawer-section account-section legal-summary">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Before reliance</p><h3>Engineering and public-use controls</h3></div></div>
+            <ul>
+              <li>Budgetary estimate only; a competent engineer must approve final design.</li>
+              <li>Verify the displayed rate source, date, coverage and confidence before procurement.</li>
+              <li>This free edition collects no payment or subscription information.</li>
+            </ul>
+            <div class="legal-link-row"><button class="button secondary" data-legal="terms" type="button">Terms of use</button><button class="button secondary" data-legal="privacy" type="button">Privacy notice</button></div>
+          </section>
+        </aside>
+      </div>
+
+      <div id="legalOverlay" class="drawer-overlay hidden no-print" role="presentation">
+        <aside class="rate-drawer legal-drawer" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+          <div class="drawer-header">
+            <div><p class="eyebrow">Public-use documents</p><h2 id="legalTitle">Terms of use</h2></div>
+            <button id="closeLegal" class="drawer-close" type="button" aria-label="Close legal document">×</button>
+          </div>
+          <div class="legal-tabs"><button id="showTerms" class="active" type="button">Terms</button><button id="showPrivacy" type="button">Privacy</button></div>
+          <article id="legalContent" class="legal-content"></article>
+        </aside>
+      </div>
+
+      <div id="rateOverlay" class="drawer-overlay hidden no-print" role="presentation">
+        <aside class="rate-drawer" role="dialog" aria-modal="true" aria-labelledby="rateDeskTitle">
+          <div class="drawer-header">
+            <div><p class="eyebrow">Rate controls</p><h2 id="rateDeskTitle">Hybrid Rate Desk</h2></div>
+            <button id="closeRateDesk" class="drawer-close" type="button" aria-label="Close rate desk">×</button>
+          </div>
+
+          <div class="feed-card">
+            <div class="feed-status-row">
+              <div><span id="feedStatusDot" class="feed-dot review"></span><strong id="feedStatusLabel">Review catalogue</strong></div>
+              <span id="feedModeBadge" class="count-badge">Fallback</span>
+            </div>
+            <p id="feedSourceLabel">Checking configured market-data source…</p>
+            <div class="feed-metrics">
+              <div><span>Rate date</span><strong id="rateAsOf">—</strong></div>
+              <div><span>Coverage</span><strong id="rateCoverage">—</strong></div>
+              <div><span>Confidence</span><strong id="rateConfidence">—</strong></div>
+            </div>
+          </div>
+
+          <section class="drawer-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Approval inputs</p><h3>Daily market adjustment</h3></div><span class="manual-pill">Estimator review</span></div>
+            <div class="field-grid two rate-fields">
+              <label class="field full"><span>Region</span>
+                <select id="rateRegion">
+                  <option value="1.03">Mumbai / Thane</option>
+                  <option value="1.01">Pune</option>
+                  <option value="0.98">Gujarat</option>
+                  <option value="1.00">Pan India reference</option>
+                </select>
+              </label>
+              <label class="field"><span>Steel movement <b>%</b></span><input id="steelIndexInput" type="number" step="0.1" value="0" /></label>
+              <label class="field"><span>Aluminium movement <b>%</b></span><input id="aluminiumIndexInput" type="number" step="0.1" value="0" /></label>
+              <label class="field"><span>Supplier factor <b>×</b></span><input id="supplierFactorInput" type="number" min="0.5" max="2" step="0.01" value="1" /></label>
+              <label class="field"><span>Approved on</span><input id="rateDateInput" type="date" /></label>
+              <label class="field full"><span>Source / approval note</span><input id="rateSourceInput" value="Supplier validation pending" /></label>
+            </div>
+            <div class="drawer-actions">
+              <button id="applyRatesBtn" class="button primary" type="button">Review &amp; apply rates</button>
+              <button id="clearRateOverridesBtn" class="button secondary" type="button">Clear BOQ overrides</button>
+            </div>
+            <p class="source-warning">Do not label estimates “live” until a licensed feed and supplier catalogue are connected. Manual approval remains available as a controlled fallback.</p>
+          </section>
+
+          <section class="drawer-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Traceability</p><h3>Rate composition</h3></div></div>
+            <div class="rate-composition">
+              <div><span>CS pipe & fittings</span><strong>Supplier base × steel index × region</strong></div>
+              <div><span>Valves & stations</span><strong>Approved supplier base × region</strong></div>
+              <div><span>Insulation</span><strong>Supplier base × aluminium index × region</strong></div>
+              <div><span>Labour items</span><strong>Approved baseline × region</strong></div>
+            </div>
+          </section>
+
+          <section class="drawer-section commercial-section">
+            <div class="drawer-section-heading"><div><p class="eyebrow">Public beta safeguards</p><h3>Tester readiness</h3></div><span class="count-badge">Free beta</span></div>
+            <div class="readiness-list">
+              <div class="ready"><span>✓</span><p><strong>Engineering engine and proposal workflow</strong><small>Validated regression suite</small></p></div>
+              <div class="ready"><span>✓</span><p><strong>Rate provenance and approval controls</strong><small>Source and confidence remain visible</small></p></div>
+              <div class="ready"><span>✓</span><p><strong>Authenticated project storage</strong><small>Saved projects are isolated by user ID</small></p></div>
+              <div class="ready"><span>✓</span><p><strong>Structured tester feedback</strong><small>Stored for product improvement</small></p></div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <div id="feedbackOverlay" class="drawer-overlay hidden no-print" role="presentation">
+        <aside class="rate-drawer feedback-drawer" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
+          <div class="drawer-header feedback-header">
+            <div><p class="eyebrow">Product feedback</p><h2 id="feedbackTitle">Help shape SteamBOQ</h2><span>About two minutes</span></div>
+            <button id="closeFeedback" class="drawer-close" type="button" aria-label="Close feedback form">×</button>
+          </div>
+
+          <form id="feedbackForm" novalidate>
+            <section class="drawer-section feedback-section">
+              <div class="feedback-question"><span>1</span><div><h3>How was your experience?</h3><p>Rate this estimate from difficult to excellent.</p></div></div>
+              <div id="feedbackRating" class="rating-grid" role="radiogroup" aria-label="Experience rating">
+                <button type="button" data-rating="1" aria-pressed="false"><strong>1</strong><span>Difficult</span></button>
+                <button type="button" data-rating="2" aria-pressed="false"><strong>2</strong><span>Poor</span></button>
+                <button type="button" data-rating="3" aria-pressed="false"><strong>3</strong><span>Okay</span></button>
+                <button type="button" data-rating="4" aria-pressed="false"><strong>4</strong><span>Good</span></button>
+                <button type="button" data-rating="5" aria-pressed="false"><strong>5</strong><span>Excellent</span></button>
+              </div>
+              <input id="feedbackRatingValue" type="hidden" value="" />
+              <p id="ratingError" class="field-error hidden">Please select an experience rating.</p>
+            </section>
+
+            <section class="drawer-section feedback-section">
+              <div class="feedback-question"><span>2</span><div><h3>What is this about?</h3><p>Choose the closest category.</p></div></div>
+              <div id="feedbackCategories" class="category-grid" role="radiogroup" aria-label="Feedback category">
+                <button type="button" data-category="calculation" aria-pressed="false">Calculation issue</button>
+                <button type="button" data-category="boq_rates" aria-pressed="false">BOQ or rates</button>
+                <button type="button" data-category="usability" aria-pressed="false">Ease of use</button>
+                <button type="button" data-category="feature" aria-pressed="false">Feature idea</button>
+                <button type="button" data-category="other" aria-pressed="false">Other</button>
+              </div>
+              <input id="feedbackCategoryValue" type="hidden" value="" />
+              <p id="categoryError" class="field-error hidden">Please select a category.</p>
+            </section>
+
+            <section class="drawer-section feedback-section">
+              <div class="feedback-question"><span>3</span><div><h3>Tell us what happened</h3><p>Specific examples help us decide what to change.</p></div></div>
+              <label class="feedback-textarea"><textarea id="feedbackComment" minlength="20" maxlength="1500" placeholder="Example: I could not understand why DN40 was selected, or I need separate material and labour totals…"></textarea><span><b id="feedbackCharCount">0</b>/1500</span></label>
+              <p id="commentError" class="field-error hidden">Please enter at least 20 characters.</p>
+              <div class="field-grid two feedback-meta-fields">
+                <label class="field"><span>Your role</span><select id="feedbackRole"><option value="contractor">Contractor</option><option value="consultant">Consultant / EPC</option><option value="plant_engineer">Plant engineer</option><option value="supplier">Supplier</option><option value="student">Student / learner</option><option value="other">Other</option></select></label>
+                <label class="field"><span>Contact email <b>optional</b></span><input id="feedbackEmail" type="email" autocomplete="email" placeholder="name@company.com" /></label>
+              </div>
+              <label class="consent-row"><input id="feedbackFollowUp" type="checkbox" /><span><strong>You may contact me about this feedback.</strong><small>Email is used only for this follow-up.</small></span></label>
+              <label class="consent-row"><input id="feedbackIncludeContext" type="checkbox" /><span><strong>Include the current calculation summary.</strong><small>Project and client names will be excluded.</small></span></label>
+              <label class="honeypot" aria-hidden="true">Website<input id="feedbackWebsite" tabindex="-1" autocomplete="off" /></label>
+            </section>
+
+            <div class="feedback-submit-wrap">
+              <div id="feedbackSubmitStatus" class="feedback-submit-status hidden" role="status"></div>
+              <button id="submitFeedbackBtn" class="button primary feedback-submit" type="submit">Submit private feedback</button>
+              <p>Submissions are private and never appear publicly. Do not include confidential plant, client or pricing information.</p>
+            </div>
+          </form>
+
+          <div id="feedbackSuccess" class="feedback-success hidden">
+            <div class="success-mark">✓</div><h3>Thank you—feedback received.</h3><p id="feedbackSuccessMessage">Your experience will help prioritize the next SteamBOQ improvement.</p>
+            <div class="feedback-success-actions">
+              <button id="copyQueuedFeedback" class="button primary hidden" type="button">Copy feedback for owner</button>
+              <button id="sendAnotherFeedback" class="button secondary" type="button">Send another idea</button>
+            </div>
+            <p id="copyFeedbackStatus" class="copy-feedback-status hidden" role="status"></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
