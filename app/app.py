@@ -1,31 +1,40 @@
-from utils.session import initialize_session
-
-initialize_session()
+from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
+
 
 st.set_page_config(
-    page_title="SteamBOQ_AI — Legacy Prototype",
+    page_title="SteamBOQ · Proposal Estimator",
     page_icon="♨️",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed",
 )
 
-st.title("♨️ SteamBOQ_AI")
-
-st.warning(
-    "Legacy Streamlit prototype: this is not the current production application. "
-    "Use the canonical SteamBOQ public beta at "
-    "https://steamboq-proposal-estimator.briny-giant-5065.chatgpt.site"
+st.markdown(
+    """
+    <style>
+      [data-testid="stHeader"],
+      [data-testid="stToolbar"],
+      [data-testid="stSidebar"],
+      footer { display: none !important; }
+      [data-testid="stAppViewContainer"] { background: #edf3f4; }
+      [data-testid="stMainBlockContainer"] {
+        max-width: 100%;
+        padding: 0 !important;
+      }
+      iframe[title="streamlit.components.v1.html"] {
+        display: block;
+        border: 0;
+      }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
 
-st.subheader("AI-Assisted Utility Piping BOQ Tool")
+embed_path = Path(__file__).with_name("steamboq_ui.html")
+if not embed_path.exists():
+    st.error("SteamBOQ interface asset is missing. Please redeploy the latest GitHub revision.")
+    st.stop()
 
-st.markdown("---")
-
-st.markdown("""
-### Welcome
-
-Use the navigation panel on the left to access the original prototype modules.
-
-Prototype Version: **1.0 MVP — Legacy**
-""")
+components.html(embed_path.read_text(encoding="utf-8"), height=2400, scrolling=True)
