@@ -1,255 +1,86 @@
-# SteamBOQ_AI
-### AI-Assisted Engineering Platform for Steam Utility Design, Pipe Sizing & Preliminary BOQ Generation
+# SteamBOQ
 
----
+**AI-assisted steam requirement, utility-piping and preliminary BOQ estimator**
 
-## Overview
+> **Canonical application:** The actively developed public application is in [`sites_app/`](./sites_app).  
+> The Python/Streamlit implementation in [`app/`](./app) and [`calculations/`](./calculations) is retained as the **legacy prototype** for engineering reference.
 
-SteamBOQ_AI is a Python-based engineering application developed to automate preliminary steam utility design calculations for industrial process heating systems.
+## Current public application
 
-The platform assists engineers in rapidly estimating steam requirements, selecting preliminary pipe sizes, sizing condensate lines, evaluating hydraulic performance, and generating engineering outputs required during the proposal and conceptual design stages.
+[Open the SteamBOQ public beta](https://steamboq-proposal-estimator.briny-giant-5065.chatgpt.site)
 
-The project combines traditional process engineering principles with modern software development practices to reduce manual calculations, improve design consistency, and accelerate project estimation.
+The canonical application provides:
 
-This application is being developed as a modular engineering platform with future AI-assisted design recommendations and automated BOQ generation capabilities.
+- Product-heating and direct heat-load calculation modes.
+- Saturated-steam demand and property interpolation.
+- Steam pipe sizing, velocity checks and iterative pressure-drop screening.
+- Condensate generation, flash-steam estimation and condensate-line sizing.
+- Preliminary BOQ quantities and budgetary rates.
+- Scenario comparison and CSV/print export.
+- Free ChatGPT sign-in for private saved projects.
+- Private calculation history for the latest 50 deliberate calculations.
+- Structured user-feedback collection.
+- A licensed daily rate-feed adapter with a clearly identified fallback catalogue.
 
----
+Engineering results are preliminary and must be independently reviewed before design, procurement or construction.
 
-## 🎯 Project Objectives
+## Repository structure
 
-- Automate repetitive steam engineering calculations.
-- Reduce preliminary engineering design time.
-- Standardize steam utility calculations.
-- Assist engineers during proposal and estimation stages.
-- Build a scalable engineering platform for industrial utility systems.
+| Path | Status | Purpose |
+|---|---|---|
+| [`sites_app/`](./sites_app) | **Canonical / active** | Current JavaScript application, Worker API, D1 schema, tests and Sites deployment configuration |
+| [`app/`](./app) | Legacy | Earlier Streamlit interface |
+| [`calculations/`](./calculations) | Legacy reference | Earlier Python engineering modules |
+| [`databases/`](./databases) | Legacy reference | Earlier spreadsheet engineering databases |
+| [`docs/`](./docs) | Reference | Engineering notes, workbooks and screenshots |
 
----
+GitHub stores both implementations, but they use different runtimes. Deploying the repository as a conventional Streamlit application launches the legacy Python version and will not reproduce the current Sites interface, login, account history or D1 persistence.
 
-## ✨ Current Features
-
-### Steam Engineering
-
-- Steam Quantity Calculation
-- Steam Property Lookup
-- Steam Saturation Temperature Lookup
-- Heat Load Calculation
-- Product Heating Calculation
-
-### Steam Distribution
-
-- Steam Pipe Size Recommendation
-- Steam Velocity Calculation
-- Preliminary Pressure Drop Calculation
-
-### Condensate System
-
-- Condensate Generation Calculation
-- Condensate Pipe Size Recommendation
-
-### User Interface
-
-- Interactive Streamlit Application
-- Modular Engineering Forms
-- Engineering Results Dashboard
-
----
-
-## 🏗️ Project Architecture
-
-```
-SteamBOQ_AI
-│
-├── app/
-│   ├── components/
-│   ├── forms/
-│   ├── pages/
-│   └── utils/
-│
-├── calculations/
-│   ├── steam/
-│   ├── condensate/
-│   └── hydraulics/
-│
-├── databases/
-│
-├── constants/
-│
-├── docs/
-│
-└── app.py
-```
-
-The application follows a modular architecture where engineering calculations, user interface, reusable components, and engineering databases are separated for improved maintainability and scalability.
-
----
-
-## ⚙️ Technologies Used
-
-### Programming
-
-- Python
-
-### Framework
-
-- Streamlit
-
-### Data Processing
-
-- Pandas
-- NumPy
-
-### Development
-
-- Git
-- GitHub
-
----
-
-## 📊 Engineering Modules
-
-| Module | Status |
-|---------|--------|
-| Heat Load Calculation | ✅ Complete |
-| Steam Quantity Calculation | ✅ Complete |
-| Steam Property Database | ✅ Complete |
-| Steam Pipe Sizing | ✅ Complete |
-| Steam Velocity Check | ✅ Complete |
-| Pressure Drop Calculation | ✅ Complete |
-| Condensate Generation | ✅ Complete |
-| Condensate Pipe Sizing | ✅ Complete |
-| Engineering Summary | ✅ Complete |
-| BOQ Generation | 🚧 In Progress |
-| Cost Estimation | 📅 Planned |
-| PDF Report Generation | 📅 Planned |
-| AI Engineering Assistant | 🔮 Future |
-
----
-
-## 📷 Application Screenshots
-
-> Screenshots will be added after UI refinement.
-
-- Dashboard
-- Steam Calculation Module
-- Pipe Sizing Module
-- Condensate Module
-- Design Summary
-
----
-
-## 🚀 Installation
-
-Clone the repository
+## Run the canonical application
 
 ```bash
-git clone https://github.com/yourusername/SteamBOQ_AI.git
+git clone https://github.com/yadavraje/SteamBOQ_AI.git
+cd SteamBOQ_AI/sites_app
+npm install
+npm test
+npm run dev
 ```
 
-Navigate to the project
+The canonical application requires Node.js. Production account storage and ChatGPT identity are supplied by the OpenAI Sites runtime through the configuration in `sites_app/.openai/hosting.json`.
 
-```bash
-cd SteamBOQ_AI
-```
+## Canonical engineering scope
 
-Install dependencies
+The active engine in `sites_app/src/engine.js` includes:
+
+- IAPWS-IF97 benchmark property nodes at 0.5 barg intervals.
+- Energy balance with efficiency and design-margin controls.
+- Diameter-dependent fitting equivalent lengths.
+- Compressible saturated-steam pressure-drop iteration.
+- Minimum steam-to-product temperature-approach validation.
+- Condensate receiver-pressure and flash-steam effects.
+- A blocking no-solution state when sizes through DN200 cannot satisfy the entered limits.
+- Separate hydraulic and BOQ material lengths.
+
+Run `npm test` from `sites_app/` to validate engineering benchmarks, authentication boundaries, database ownership, account-history limits and UI contracts.
+
+## Legacy Streamlit prototype
+
+The original Streamlit implementation is preserved to retain its engineering history and documentation. It is not the current production source.
+
+To run it for reference:
 
 ```bash
 pip install -r requirements.txt
+streamlit run app/app.py
 ```
 
-Run the application
+Do not use the Streamlit output as evidence that the canonical Sites application has been deployed successfully.
 
-```bash
-streamlit run app.py
-```
+## Rates and limitations
 
----
+The public beta uses a visibly unverified seed catalogue unless a licensed current rate feed is configured. Final quotations require supplier validation, approved process data, detailed hydraulics, applicable codes, stress and water-hammer review, vendor sizing and site confirmation.
 
-## Engineering Workflow
+## Author
 
-```
-User Input
-      │
-      ▼
-Heat Load Calculation
-      │
-      ▼
-Steam Quantity
-      │
-      ▼
-Steam Property Lookup
-      │
-      ▼
-Steam Pipe Sizing
-      │
-      ▼
-Velocity Check
-      │
-      ▼
-Pressure Drop
-      │
-      ▼
-Condensate Generation
-      │
-      ▼
-Condensate Pipe Sizing
-      │
-      ▼
-Engineering Summary
-      │
-      ▼
-Future BOQ Generation
-```
-
----
-
-## 🛣️ Development Roadmap
-
-### Version 0.1
-- Steam Quantity Calculation
-- Steam Pipe Sizing
-- Condensate Sizing
-
-### Version 0.2
-- Hydraulic Calculations
-- Engineering Dashboard
-
-### Version 0.3
-- Preliminary BOQ Generation
-
-### Version 0.4
-- Cost Estimation Module
-- PDF Report Generation
-
-### Version 0.5
-- AI-Assisted Engineering Recommendations
-
-### Version 1.0
-- Complete Engineering Design Assistant
-
----
-
-## 🎯 Future Vision
-
-SteamBOQ_AI is envisioned as a comprehensive engineering decision-support platform for industrial utility system design.
-
-Future capabilities include:
-
-- AI-assisted engineering recommendations
-- Intelligent pipe routing suggestions
-- Automated BOQ generation
-- Cost estimation
-- Report generation
-- Multi-utility support (Steam, Hot Oil, Chilled Water, Cooling Water)
-- Engineering standards integration
-- LLM-powered engineering assistant
-
----
-
-## 👨‍💻 Author
-
-**Rajesh Yadav**
-
-Engineering | Data Analytics | Machine Learning | AI
-
-GitHub: https://github.com/yadavraje
+**Rajesh Yadav**  
+Mechanical Engineering | Project Estimation | Data Analytics | AI
