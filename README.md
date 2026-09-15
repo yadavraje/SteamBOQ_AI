@@ -29,12 +29,12 @@ Engineering results are preliminary and must be independently reviewed before de
 | Path | Status | Purpose |
 |---|---|---|
 | [`sites_app/`](./sites_app) | **Canonical / active** | Current JavaScript application, Worker API, D1 schema, tests and Sites deployment configuration |
-| [`app/`](./app) | Legacy | Earlier Streamlit interface |
+| [`app/`](./app) | **Streamlit delivery** | Embedded guest edition of the canonical interface using the same tested JavaScript engineering engine |
 | [`calculations/`](./calculations) | Legacy reference | Earlier Python engineering modules |
 | [`databases/`](./databases) | Legacy reference | Earlier spreadsheet engineering databases |
 | [`docs/`](./docs) | Reference | Engineering notes, workbooks and screenshots |
 
-GitHub stores both implementations, but they use different runtimes. Deploying the repository as a conventional Streamlit application launches the legacy Python version and will not reproduce the current Sites interface, login, account history or D1 persistence.
+GitHub stores both runtime editions. Streamlit launches `app/app.py`, which embeds the canonical interface and calculation engine. It runs without login and stores scenarios, calculation history, approved rate snapshots and feedback drafts in the visitor's browser. The Sites edition additionally provides ChatGPT identity and D1-backed cross-device account storage.
 
 ## Run the canonical application
 
@@ -63,18 +63,18 @@ The active engine in `sites_app/src/engine.js` includes:
 
 Run `npm test` from `sites_app/` to validate engineering benchmarks, authentication boundaries, database ownership, account-history limits and UI contracts.
 
-## Legacy Streamlit prototype
+## Streamlit edition
 
-The original Streamlit implementation is preserved to retain its engineering history and documentation. It is not the current production source.
+The Streamlit entry point now displays the canonical SteamBOQ interface and uses the same JavaScript engineering engine. It is intended for frictionless public testing without login. Browser data is device-specific and may be lost if the visitor clears site storage.
 
-To run it for reference:
+To run it:
 
 ```bash
 pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
-Do not use the Streamlit output as evidence that the canonical Sites application has been deployed successfully.
+The earlier Python calculation modules remain in the repository as engineering-history references; the active Streamlit interface does not use them for its results.
 
 ## Rates and limitations
 
